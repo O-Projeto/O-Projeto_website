@@ -1,11 +1,11 @@
 /*CELULAR OK*/
-@media screen and (min-width:0) {
+@media screen and (min-width:375px) {
     .projetos{
         text-align: center;
     }
     #title{
-        margin-left: -1rem;
-        font-size: 1.7rem;
+        /*margin-left: -1rem;*/
+        font-size: 1rem;
     }
     .fred_popup{
         background-color: var(--dark_blue);
