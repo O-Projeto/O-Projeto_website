@@ -58,9 +58,10 @@
 @media screen and (min-width:1024px) {
     .patrocionio{
         margin: 5rem 0 10rem 0; 
+        width:100%;
     }
     #img_banner{
-        width: 80rem;
+        width: 90rem;
     }
     .text_patrocionio{
         margin: -25rem 0 0 5rem;
