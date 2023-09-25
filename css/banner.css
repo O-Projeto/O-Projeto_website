@@ -1,0 +1,92 @@
+/*TABLET*/
+@media screen and (min-width:0){
+    .banner{
+        width: 100%;
+        position: relative;
+        width: 25rem;
+       
+    }
+    .banner_img{
+        width: 50rem;
+        
+    }
+    .text{
+        font-size: 1.5rem;
+        position: absolute;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        margin-left: 12rem;
+        width: 25rem;
+        text-align: center;
+        
+    }
+    #text_banner{
+        font-family: "roboto";
+        color: var(--white);
+    
+    }
+    #text_banner_down{
+        color: var(--yellow);
+        font-size: 2rem;
+
+    }
+}
+/*TABLET*/
+@media screen and (min-width:768px) {
+    .banner{
+        width: 100%;
+        position: relative;
+    }
+    .banner_img{
+        width: 50rem
+        
+    }
+    .text{
+        font-size: 2rem;
+        position: absolute;
+        margin-top: 2rem;
+        margin-left: 11rem;
+        
+    }
+    #text_banner{
+        font-family: "roboto";
+        color: var(--white);
+        text-align: center;
+    }
+    #text_banner_down{
+        color: var(--yellow);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+/*NOTEBOOK*/
+@media screen and (min-width:1024px) {
+    .banner{
+        width: 100%;
+        position: relative;
+    }
+    .text{
+        font-size: 2rem;
+        position: absolute;
+        margin-top: 3rem;
+        margin-left: 25rem;
+    }
+    #text_banner{
+        font-family: "roboto";
+        color: var(--white);
+    }
+    #text_banner_down{
+        color: var(--yellow);
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .banner_img{
+        width: 80rem;
+        
+    }
+    /*Qualquer fonte como Social Gothic*/
+    #gothic{
+        font-family: "social-gothic";
+    }
+}

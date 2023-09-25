@@ -1,0 +1,100 @@
+@media screen and (min-width:0){
+    #logo_img{
+        width: 5rem;
+        padding: 2px;
+        margin-left: 20rem;
+    }
+    .nav{
+        /*display: flex;*/
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .navegador{
+        background-color: var(--dark_blue);
+        /*margin-top: 1rem;
+        margin-bottom: 1rem;*/
+        padding: 1rem;
+        border: none;
+        border-radius: 1rem;
+        width: 28rem;
+        margin: 1rem 0 1rem 8rem;
+
+    }
+    #nav{
+        text-decoration: none;
+        color: var(--white);
+        margin: 1rem;
+        font-size: 1rem;
+    }
+}
+/*TABLET OK*/
+@media screen and (min-width:768px) {
+    #logo_img{
+        width: 95px;
+        padding: 2px;
+        margin-left: 18rem;
+    }
+    .nav{
+        /*display: flex;*/
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 3rem;
+    }
+    .navegador{
+        background-color: var(--dark_blue);
+        /*margin-top: 1rem;
+        margin-bottom: 1rem;*/
+        padding: 1rem;
+        border: none;
+        border-radius: 1rem;
+        width: 28rem;
+        margin: 1rem 0 1rem 5rem;
+
+    }
+    #nav{
+        text-decoration: none;
+        color: var(--white);
+        margin: 1rem;
+        font-size: 1rem;
+    }
+}
+/*NOTEBOOK*/
+@media screen and (min-width:1024px) {
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 5px;
+        margin-left: 1rem;
+    }
+    #logo_img{
+        width: 108px;
+        padding: 5px;
+        margin-left: 5rem;
+    }
+    .navegador{
+        background-color: var(--dark_blue);
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: none;
+        border-radius: 1rem 0rem 0rem 1rem;
+        width: 35rem;
+
+    }
+    #nav{
+        text-decoration: none;
+        color: var(--white);
+        margin: 2rem;
+        font-size: 1rem;
+    }
+    #nav:hover{
+        color: var(--yellow);
+        transition: 0.5s;
+        transition: transform 0.5s ease-in-out; 
+    }
+    #sol{
+        width: 1.5rem;
+    }
+}

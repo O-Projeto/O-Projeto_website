@@ -1,0 +1,47 @@
+:root{
+    --red : #d30f0f;
+    --yellow: #ffba08;
+    --dark_blue: #04588c;
+    --ligth_blue: #4a8fc8;
+    --green: #21776c;
+    --black: #101010;
+    --grey: #414141;
+    --light_grey: #dbdbdb;
+    --white: #f6f6f6;
+}
+
+html{
+    background-color: var(--white);
+    font-family: "social-gothic";
+    font-style: normal;
+    overflow-x: hidden;
+    margin-left: -8px;
+    margin-right: -8px;
+    
+} 
+@font-face {
+    font-family: "roboto";
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://use.typekit.net/iji5bxg.css");
+}
+@font-face {
+    font-family: "social-gothic";
+    font-weight: 700;
+    src: url("../Font/Social Gothic Stencil.otf") format('opentype');
+}
+
+/*Barra de rolagem*/
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-track{
+    background-color:var(--white);
+    /*height: 25rem;*/
+}
+body::-webkit-scrollbar-thumb{
+    background: var(--dark_blue);
+    border-radius: 5rem;
+    border: none;
+    width: 0.2px;
+}

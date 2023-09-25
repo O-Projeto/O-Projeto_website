@@ -1,0 +1,178 @@
+/*CELULAR*/
+@media screen and (min-width:0) {
+    .text_objetivos{
+        font-family: "Roboto";
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    #subtitle{
+        font-family: "Social-Gothic";
+        border: none;
+        background-color: var(--yellow);
+        width: 12rem;
+        border-radius: 0.5rem;
+        font-size: 1.7rem;
+        margin-left: 16rem;
+    }
+    #sub-subtitle{
+        font-family: "Social-Gothic";
+        margin-left: 1rem;
+        font-size: 1.6rem;
+    }
+    #text_subtitle{
+        margin-left: 2rem;
+        font-size: 1.2rem;
+    }
+
+    /*---------------------*/
+    .objetivos{
+        text-align: center;
+
+    }
+    .carrossel_objetivos{
+        display: flex;
+        overflow: hidden;
+        width: 93rem;
+        
+    }
+    .comunidade{
+        flex: 0 0 23.23%; /* Define a largura para exibir apenas 3 pessoas de cada vez */
+        transition: transform 0.5s ease-in-out; 
+        text-align: center;
+        padding: 2px;
+        border-radius: 1rem;
+        background-color: var(--yellow);
+        font-family: "Roboto";
+        text-align: center;
+        margin-left:5rem;
+    }
+    #icon{
+        width: 5rem;
+        align-items: center;
+        margin-left: 2rem;
+        padding: 1rem;
+    }
+}
+
+/*TABLET*/
+@media screen and (min-width:768px) {
+    .text_objetivos{
+        font-family: "Roboto";
+        text-align: center;
+        padding: 1rem;
+        margin: 2rem;
+    }
+    #subtitle{
+        font-family: "Social-Gothic";
+        border: none;
+        background-color: var(--yellow);
+        width: 12rem;
+        border-radius: 0.5rem;
+        font-size: 2rem;
+        margin-left: 15rem;
+    }
+    #sub-subtitle{
+        font-family: "Social-Gothic";
+        margin-left: -1rem;
+        font-size: 2rem;
+    }
+    #text_subtitle{
+        margin-left: 5rem;
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    /*---------------------*/
+    .objetivos{
+        text-align: center;
+
+    }
+    .carrossel_objetivos{
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        
+    }
+    .comunidade{
+        flex: 0 0 33.33%; /* Define a largura para exibir apenas 3 pessoas de cada vez */
+        transition: transform 0.5s ease-in-out; 
+        text-align: center;
+        padding: 20px;
+
+        width: 18rem;
+        height: 17rem;
+        border-radius: 1rem;
+        background-color: var(--yellow);
+        font-family: "Roboto";
+        text-align: center;
+        margin-left:5rem;
+    }
+    #icon{
+        width: 5rem;
+        align-items: center;
+        margin-left: 2rem;
+        padding: 1rem;
+    }
+}
+
+/*NOTEBOOK*/
+@media screen and (min-width:1024px) {
+    .text_objetivos{
+        font-family: "Roboto";
+        text-align: center;
+        padding: 1rem;
+        margin: 2rem;
+    }
+    #subtitle{
+        font-family: "Social-Gothic";
+        border: none;
+        background-color: var(--yellow);
+        width: 12rem;
+        border-radius: 0.5rem;
+        font-size: 2rem;
+        margin-left: 29rem;
+        text-align: center;
+    }
+    #sub-subtitle{
+        font-family: "Social-Gothic";
+        text-align: center;
+        margin-left: 1rem;
+    }
+    #text_subtitle{
+        margin-left: 10rem;
+        width: 70%;
+        font-size: 1.2rem;
+    }
+    /*---------------------*/
+    .objetivos{
+        text-align: center;
+
+    }
+    .carrossel_objetivos{
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        
+    }
+    .comunidade{
+        flex: 0 0 33.33%; /* Define a largura para exibir apenas 3 pessoas de cada vez */
+        transition: transform 0.5s ease-in-out; /* Adiciona uma transição suave ao transform */
+        text-align: center;
+        padding: 20px;
+
+        width: 18rem;
+        height: 17rem;
+        border-radius: 1rem;
+        background-color: var(--yellow);
+        font-family: "Roboto";
+        text-align: center;
+        margin-left:5rem;
+    }
+    #icon{
+        width: 5rem;
+        align-items: center;
+        margin-left: 2rem;
+        padding: 1rem;
+    }
+}

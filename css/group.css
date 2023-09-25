@@ -1,0 +1,197 @@
+/*CELULAR*/
+@media screen and (min-width:0) {
+    #nome_people{
+        font-family: "Social-Gothic";
+        padding: 1rem;
+    }
+    #fotinha{
+        width: 5rem;
+        border-radius: 5rem;
+    }
+    /*SETAS*/
+    #direita, #esquerda{
+        width: 2.5rem;
+        justify-content: space-around;
+
+    }
+    .people {
+        text-align: center;
+    }
+    .carrossel_people {
+        display: flex;
+        overflow: hidden;
+        width: 93rem; /* Garante que o carrossel ocupe a largura completa do container pai */
+    }
+    .person {
+        flex: 0 0 13.13%; 
+        transition: transform 0.5s ease-in-out; 
+        text-align: center;
+        padding: 2px;
+        border: none;
+        border-radius: 1rem;
+        background-image: linear-gradient(#1D736F, #042E41);
+        color: var(--white);
+        font-family: "Roboto";
+        margin-left: 5rem;
+
+    
+    }
+    .person img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #nome_people {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .person p {
+        font-size: 14px;
+        color: var(--yellow);
+        font-family: 'Social-Gothic';
+
+    }
+    #titulo{
+        margin-left: 5rem;
+        font-size: 1.7rem;
+    }
+    .pula{
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+}
+/*TABLET*/
+@media screen and (min-width:768px) {
+    #nome_people{
+        font-family: "Social-Gothic";
+        padding: 1rem;
+    }
+    #fotinha{
+        width: 10rem;
+        border-radius: 5rem;
+    }
+    /*SETAS*/
+    #direita, #esquerda{
+        width: 3rem;
+        justify-content: space-around;
+        margin-left: 2rem;
+    }
+    .people {
+        text-align: center;
+        
+    }
+
+    .carrossel_people {
+        display: flex;
+        overflow: hidden;
+        width: 100%; /* Garante que o carrossel ocupe a largura completa do container pai */
+        
+    }
+
+    .person {
+        flex: 0 0 23.23%; 
+        transition: transform 0.5s ease-in-out; 
+        text-align: center;
+        padding: 10px;
+        border: none;
+        border-radius: 1rem;
+        background-image: linear-gradient(#1D736F, #042E41);
+        color: var(--white);
+        font-family: "Roboto";
+        margin-left: 5rem;
+    
+    }
+
+    .person img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #nome_people {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .person p {
+        font-size: 14px;
+        color: var(--yellow);
+        font-family: 'Social-Gothic';
+
+    }
+    #titulo{
+        margin-right: 2rem;
+        font-size: 2rem;
+    }
+    .pula{
+        margin-left: -2rem;
+        margin-top: 2rem;
+    }
+}
+/*NOTEBOOK*/
+@media screen and (min-width:1024px) {
+    #nome_people{
+        font-family: "Social-Gothic";
+        padding: 1rem;
+    }
+    #fotinha{
+        width: 10rem;
+        border-radius: 5rem;
+    }
+    /*SETAS*/
+    #direita, #esquerda{
+        width: 3rem;
+        justify-content: space-around;
+    }
+    #direita:hover, #esquerda:hover{
+        cursor: pointer;
+    }
+    .people {
+        text-align: center;
+        
+    }
+
+    .carrossel_people {
+        display: flex;
+        overflow: hidden;
+        width: 100%; /* Garante que o carrossel ocupe a largura completa do container pai */
+        
+    }
+
+    .person {
+        flex: 0 0 33.33%; 
+        transition: transform 0.5s ease-in-out; 
+        text-align: center;
+        padding: 20px;
+        border: none;
+        border-radius: 1rem;
+        background-image: linear-gradient(#1D736F, #042E41);
+        color: var(--white);
+        font-family: "Roboto";
+        margin-left: 5rem;
+    
+    }
+
+    .person img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #nome_people {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .person p {
+        font-size: 14px;
+        color: var(--yellow);
+
+    }
+    #titulo{
+        margin-left: 2rem;
+        font-size: 1.7rem;
+    }
+    .pula{
+        margin-left: -2rem;
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,106 @@
+/*CELULAR OK*/
+@media screen and (min-width:0) {
+    .container1{
+        background-color: var(--grey);
+        margin-bottom: -8px;
+        text-align: center;
+        margin-top: -7rem;
+
+    }
+    #a_footer:hover{
+        color:var(--yellow);
+        transition: 0.5s;
+    }
+    .rede_social{
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem 2rem 0 2rem;
+    }
+    #icon_social{
+        width: 1.7rem;
+        border: none;
+        margin-left: 2rem;
+        padding: 0.5rem;
+    }
+    #a_footer{
+        color: #969696;
+        margin-left: 5rem;
+        text-decoration: none;
+        font-family: 'Social-Gothic';
+        margin-left: 2rem;
+    }
+    .menu_footer{
+        margin-right: 1rem;
+    }
+}
+
+/*TABLET OK*/
+@media screen and (min-width:768px) {
+    .container1{
+        background-color: var(--grey);
+        margin-bottom: -8px;
+        text-align: center;
+        margin-top: -7rem;
+
+    }
+    #a_footer:hover{
+        color:var(--yellow);
+        transition: 0.5s;
+    }
+    .rede_social{
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem 2rem 0 2rem;
+    }
+    #icon_social{
+        width: 1.7rem;
+        border: none;
+        margin-left: 2rem;
+        padding: 0.5rem;
+    }
+    #a_footer{
+        color: #969696;
+        margin-left: 5rem;
+        text-decoration: none;
+        font-family: 'Social-Gothic';
+        margin-left: 2rem;
+        font-size: 0.8rem;
+    }
+    .menu_footer{
+        margin-right: 1rem;
+    }
+    #footer{
+        font-size: 0.8rem;
+    }
+}
+/*NOTEBOOK*/
+@media screen and (min-width: 1024px) {
+    .container1{
+        background-color: var(--grey);
+        margin-bottom: -8px;
+        margin-top: 5rem;
+        text-align: center;
+
+    }
+    #a_footer:hover{
+        color:var(--yellow);
+        transition: 0.5s, ease-in-out;
+    }
+    .rede_social{
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem 2rem 0 2rem;
+    }
+    #icon_social{
+        width: 1.7rem;
+        border: none;
+        margin-left: 2rem;
+        padding: 0.5rem;
+    }
+    #a_footer{
+        color: #969696;
+        margin-left: 5rem;
+        text-decoration: none;
+        font-family: 'Social-Gothic';
+    }
+}
