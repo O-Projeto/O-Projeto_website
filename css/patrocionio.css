@@ -1,14 +1,14 @@
 /*celular*/
-@media screen and (min-width:0) {
+@media screen and (min-width:375px) {
     .patrocionio{
         margin: 5rem 0 10rem 0; 
     }
     #img_banner{
-        width: 50rem;
+        width: 20rem;
     }
     .text_patrocionio{
         margin: -18rem 0 4rem 2rem;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         text-align: center;
         color: var(--white);
         font-family: 'Roboto';
@@ -21,7 +21,7 @@
         width: 12rem;
         height: 2rem;
         font-family: 'Social-Gothic';
-        margin: -7rem 0 0 17rem;
+        margin: -2rem 0 0 7rem;
         font-size: 1rem;
     }
 }
