@@ -1,6 +1,6 @@
 
 /*CELULAR*/
-@media screen and (min-width:0) {
+@media screen and (min-width:375px) {
     .container{
         text-align: center;
     }
@@ -11,12 +11,12 @@
         font-size: 1.5rem;
     }
     .interacoes{
-        margin: 0 8rem -2rem 8rem;
+        margin: 0 8rem -2rem 2rem;
     }
 
     #img {
         position: relative;
-        width: 30rem;
+        width: 15rem;
         border: none;
         border-radius: 1rem;
         /*NÃO RETIRAR*/
