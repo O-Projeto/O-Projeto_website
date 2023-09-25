@@ -4,7 +4,7 @@
         background-color: var(--grey);
         margin-bottom: -8px;
         text-align: center;
-        margin-top: -7rem;
+        margin-top: 1rem;
 
     }
     #a_footer:hover{
@@ -12,13 +12,11 @@
         transition: 0.5s;
     }
     .rede_social{
-        display: flex;
-        justify-content: space-between;
         margin: 0.5rem 2rem 0 2rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     #icon_social{
-        width: 1rem;
+        width: 1.5rem;
         border: none;
         margin-left: 2rem;
         padding: 0.5rem;
@@ -29,7 +27,7 @@
         text-decoration: none;
         font-family: 'Social-Gothic';
         margin-left: 2rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .menu_footer{
         margin-right: 1rem;
