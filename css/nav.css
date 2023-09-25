@@ -5,7 +5,7 @@
         margin-left: 10rem;
     }
     .nav{
-        /*display: flex;*/
+
         flex-direction: row;
         justify-content: space-around;
     }
@@ -13,18 +13,18 @@
         background-color: var(--dark_blue);
         /*margin-top: 1rem;
         margin-bottom: 1rem;*/
-        padding: 1rem;
+        padding: 0.5rem;
         border: none;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         width: 20rem;
-        margin: 1rem 5rem 1rem 0;
+        margin: 1rem 5rem 1rem 1rem;
 
     }
     #nav{
         text-decoration: none;
         color: var(--white);
         margin: 1rem;
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 }
 /*TABLET OK*/
