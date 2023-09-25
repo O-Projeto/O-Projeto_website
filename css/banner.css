@@ -7,15 +7,14 @@
        
     }
     .banner_img{
-        width: 30rem;
+        width: 100%;
         
     }
     .text{
-        font-size: 1.2rem;
+        font-size: 1rem;
         position: absolute;
-        margin-top: 2rem;
-        margin-right: 2rem;
-        margin-left: 8rem;
+        margin-top: 1rem;
+        margin-left: -1rem;
         width: 25rem;
         text-align: center;
         
@@ -23,11 +22,12 @@
     #text_banner{
         font-family: "roboto";
         color: var(--white);
+        width: 100%;
     
     }
     #text_banner_down{
         color: var(--yellow);
-        font-size: 1.7rem;
+        font-size: 1rem;
 
     }
 }
