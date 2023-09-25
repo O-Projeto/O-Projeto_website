@@ -1,5 +1,5 @@
 /*CELULAR OK*/
-@media screen and (min-width:0) {
+@media screen and (min-width:375px) {
     .container1{
         background-color: var(--grey);
         margin-bottom: -8px;
@@ -17,7 +17,7 @@
         margin: 0.5rem 2rem 0 2rem;
     }
     #icon_social{
-        width: 1.7rem;
+        width: 1rem;
         border: none;
         margin-left: 2rem;
         padding: 0.5rem;
