@@ -9,8 +9,8 @@
     }
     .fred_popup{
         background-color: var(--dark_blue);
-        width: 24rem;
-        height: 27rem;
+        width: 19rem;
+        height: 20rem;
         display: flex;
         flex-direction: column;
         border-radius: 2rem;
@@ -18,14 +18,14 @@
         margin-top: 2rem;
     }
     #fred_img{
-        width: 17rem;
-        height: 14rem;
+        width: 15rem;
+        height: 12rem;
         border-radius: 2rem;
         margin: 2rem 1rem -5rem 4rem;
     }
     #b1bk_img, #mrmime_img{
-        width: 17rem;
-        height:14rem;
+        width: 15rem;
+        height:12rem;
         border-radius: 2rem;
         margin: 2rem 1rem -5rem 4rem; /*baixo - left - top - right*/
     }
