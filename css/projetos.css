@@ -21,13 +21,13 @@
         width: 15rem;
         height: 12rem;
         border-radius: 2rem;
-        margin: 2rem 1rem -5rem 4rem;
+        margin: 2rem 2rem -5rem 1rem;
     }
     #b1bk_img, #mrmime_img{
         width: 15rem;
         height:12rem;
         border-radius: 2rem;
-        margin: 2rem 1rem -5rem 4rem; /*baixo - left - top - right*/
+        margin: 2rem 2rem -5rem 1rem; /*baixo - left - top - right*/
     }
     #text_popup{
         color: var(--white);
