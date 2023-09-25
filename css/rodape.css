@@ -15,6 +15,7 @@
         display: flex;
         justify-content: space-between;
         margin: 0.5rem 2rem 0 2rem;
+        font-size: 1rem;
     }
     #icon_social{
         width: 1rem;
@@ -28,6 +29,7 @@
         text-decoration: none;
         font-family: 'Social-Gothic';
         margin-left: 2rem;
+        font-size: 1rem;
     }
     .menu_footer{
         margin-right: 1rem;
