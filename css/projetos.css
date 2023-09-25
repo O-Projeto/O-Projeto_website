@@ -9,23 +9,23 @@
     }
     .fred_popup{
         background-color: var(--dark_blue);
-        width: 25rem;
-        height: 28rem;
+        width: 24rem;
+        height: 27rem;
         display: flex;
         flex-direction: column;
         border-radius: 2rem;
-        margin-left: 10rem;
+        margin-left: 1rem;
         margin-top: 2rem;
     }
     #fred_img{
-        width: 18rem;
-        height: 15rem;
+        width: 17rem;
+        height: 14rem;
         border-radius: 2rem;
         margin: 2rem 1rem -5rem 4rem;
     }
     #b1bk_img, #mrmime_img{
-        width: 18rem;
-        height:15rem;
+        width: 17rem;
+        height:14rem;
         border-radius: 2rem;
         margin: 2rem 1rem -5rem 4rem; /*baixo - left - top - right*/
     }
