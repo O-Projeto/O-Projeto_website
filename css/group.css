@@ -20,7 +20,7 @@
     .carrossel_people {
         display: flex;
         overflow: hidden;
-        width: 93rem; /* Garante que o carrossel ocupe a largura completa do container pai */
+        width: 85rem; /* Garante que o carrossel ocupe a largura completa do container pai */
     }
     .person {
         flex: 0 0 13.13%; 
@@ -52,11 +52,11 @@
 
     }
     #titulo{
-        margin-left: 2rem;
-        font-size: 1.2rem;
+        width: 100%;
+        font-size: 1rem;
     }
     .pula{
-        margin-left: 2rem;
+        margin-left: -2rem;
         margin-top: 2rem;
     }
 }
