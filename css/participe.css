@@ -11,7 +11,7 @@
         font-size: 1.5rem;
     }
     .interacoes{
-        margin: 0 8rem -2rem 2rem;
+        margin: 0 8rem -2rem 5rem;
     }
 
     #img {
@@ -22,6 +22,7 @@
         /*NÃO RETIRAR*/
         -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
         margin-bottom: 2rem;
+
     }
     #button_inscreva{
         border: none;
