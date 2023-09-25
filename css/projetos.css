@@ -5,36 +5,36 @@
     }
     #title{
         /*margin-left: -1rem;*/
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .fred_popup{
         background-color: var(--dark_blue);
-        width: 19rem;
-        height: 20rem;
+        width: 15rem;
+        height: 28rem;
         display: flex;
         flex-direction: column;
         border-radius: 2rem;
-        margin-left: 1rem;
+        margin-left: 4rem;
         margin-top: 2rem;
     }
     #fred_img{
-        width: 15rem;
-        height: 12rem;
+        width: 12rem;
+        height: 10rem;
         border-radius: 2rem;
         margin: 2rem 2rem -5rem 1rem;
     }
     #b1bk_img, #mrmime_img{
-        width: 15rem;
-        height:12rem;
+        width: 12rem;
+        height:10rem;
         border-radius: 2rem;
-        margin: 2rem 2rem -5rem 1rem; /*baixo - left - top - right*/
+        margin: 2rem 2rem -5rem 1.5rem; /*baixo - left - top - right*/
     }
     #text_popup{
         color: var(--white);
-        margin-left: 5rem;
-        width:15rem;
+        margin-left: 2rem;
+        width:10rem;
         font-size: 0.9rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
         font-family: 'Roboto';
     }
 }
