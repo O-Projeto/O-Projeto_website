@@ -20,10 +20,10 @@
     .carrossel_people {
         display: flex;
         overflow: hidden;
-        width: 85rem; /* Garante que o carrossel ocupe a largura completa do container pai */
+        width: 25rem; /* Garante que o carrossel ocupe a largura completa do container pai */
     }
     .person {
-        flex: 0 0 13.13%; 
+        flex: 0 0 50.20%; 
         transition: transform 0.5s ease-in-out; 
         text-align: center;
         padding: 2px;
@@ -33,6 +33,7 @@
         color: var(--white);
         font-family: "Roboto";
         margin-left: 5rem;
+        width: 100%;
 
     
     }
