@@ -33,11 +33,12 @@
     .carrossel_objetivos{
         display: flex;
         overflow: hidden;
-        width: 93rem;
+        width: 25rem;
+        align-items: center;
         
     }
     .comunidade{
-        flex: 0 0 13.13%; /* Define a largura para exibir apenas 3 pessoas de cada vez */
+        flex: 0 0 30.15%; /* Define a largura para exibir apenas 3 pessoas de cada vez */
         transition: transform 0.5s ease-in-out; 
         text-align: center;
         padding: 2px;
@@ -46,12 +47,17 @@
         font-family: "Roboto";
         text-align: center;
         margin-left:5rem;
+        width: 10rem;
+        height: 15rem;
     }
     #icon{
-        width: 5rem;
+        width: 2.5rem;
         align-items: center;
-        margin-left: -1.5rem;
+        margin-left: -1rem;
         padding: 1rem;
+    }
+    #text_obj{
+        width: 10rem;
     }
 }
 
@@ -67,10 +73,9 @@
         font-family: "Social-Gothic";
         border: none;
         background-color: var(--yellow);
-        width: 12rem;
+        width: 100%;
         border-radius: 0.5rem;
         font-size: 2rem;
-        margin-left: 15rem;
     }
     #sub-subtitle{
         font-family: "Social-Gothic";
@@ -114,6 +119,14 @@
         margin-left: 2rem;
         padding: 1rem;
     }
+    #text_obj{
+        width: 10rem;
+        margin: auto;
+        font-family: 'Roboto';
+    }
+    #gothic{
+        font-family: 'Social-Gothic';
+    }
 }
 
 /*NOTEBOOK*/
@@ -128,20 +141,20 @@
         font-family: "Social-Gothic";
         border: none;
         background-color: var(--yellow);
-        width: 12rem;
+        width: 100%;
         border-radius: 0.5rem;
         font-size: 2rem;
-        margin-left: 29rem;
         text-align: center;
+     
     }
     #sub-subtitle{
         font-family: "Social-Gothic";
         text-align: center;
-        margin-left: 1rem;
+        width: 100%;
     }
     #text_subtitle{
-        margin-left: 10rem;
-        width: 70%;
+        margin-left: 1rem;
+        width: 100%;
         font-size: 1.2rem;
     }
     /*---------------------*/
@@ -156,7 +169,7 @@
         
     }
     .comunidade{
-        flex: 0 0 33.33%; /* Define a largura para exibir apenas 3 pessoas de cada vez */
+        flex: 0 0 23.33%; /* Define a largura para exibir apenas 3 pessoas de cada vez */
         transition: transform 0.5s ease-in-out; /* Adiciona uma transição suave ao transform */
         text-align: center;
         padding: 20px;
@@ -174,5 +187,13 @@
         align-items: center;
         margin-left: 2rem;
         padding: 1rem;
+    }
+    #text_obj{
+        width: 10rem;
+        margin: auto;
+        font-family: 'Roboto';
+    }
+    #gothic{
+        font-family: 'Social-Gothic';
     }
 }
