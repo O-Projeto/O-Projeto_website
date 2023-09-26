@@ -48,7 +48,8 @@
         width: 100%;
     }
     #title{
-        margin-left: -10rem;
+        text-align:center;
+        width:100%;
     }
     .fred_popup{
         background-color: var(--dark_blue);
