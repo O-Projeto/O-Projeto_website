@@ -67,10 +67,11 @@
         position: relative;
     }
     .text{
-        font-size: 2rem;
+        font-size: 2.5rem;
         position: absolute;
         margin-top: 3rem;
-        margin-left: 25rem;
+        margin-left: 20rem;
+        width: 50rem;
     }
     #text_banner{
         font-family: "roboto";
@@ -78,7 +79,7 @@
     }
     #text_banner_down{
         color: var(--yellow);
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         text-align: center;
     }
     .banner_img{
