@@ -33,10 +33,10 @@
         margin: 5rem 0 10rem 0; 
     }
     #img_banner{
-        width: 50rem;
+        width: 100%;
     }
     .text_patrocionio{
-        margin: -18rem 0 4rem 2rem;
+        margin: -15rem 0 4rem 2rem;
         font-size: 1.7rem;
         text-align: center;
         color: var(--white);
@@ -50,7 +50,7 @@
         width: 12rem;
         height: 2rem;
         font-family: 'Social-Gothic';
-        margin: -7rem 0 0 17rem;
+        margin: -7rem 0 0 1rem;
         font-size: 1rem;
     }
 }
@@ -78,7 +78,7 @@
         width: 15rem;
         height: 3rem;
         font-family: 'Social-Gothic';
-        margin: 0 0 0 32rem;
+        margin: 0 0 0 1rem;
         font-size: 1.5rem;
     }
     #patrocinio_button:hover{
