@@ -2,7 +2,7 @@
 @media screen and (min-width:0){
     .banner{
         width: 100%;
-        position: relative;
+        position: fixed;
         width: 25rem;
        
     }
