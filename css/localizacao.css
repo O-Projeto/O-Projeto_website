@@ -124,9 +124,9 @@
     .title{
         background-color: var(--dark_blue);
         color: var(--white);
-        width: 15rem;
+        width: 100%;
         text-align: center;
-        margin: 2rem 0 0 30rem;
+        margin: 2rem 0 0 0;
         border-radius: 0.5rem;
         font-size: 1.7rem;
         font-family: 'Social-gothic';
@@ -142,7 +142,7 @@
         width: 25rem;
         border: 1rem solid white;
         border-radius: 1rem;
-        margin-right: 25rem;
+        margin-right: 35rem;
     }
     .infos{
         font-family: 'Social-gothic';
