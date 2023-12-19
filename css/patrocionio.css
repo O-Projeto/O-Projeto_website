@@ -22,7 +22,8 @@
         height: 2rem;
         font-family: 'Social-Gothic';
         font-size: 0.6rem;
-        margin: 0 auto;
+        /* topo | direita | inferior | esquerda */
+        margin: -7rem 0 0 5rem;
     }
 }
 
@@ -50,7 +51,8 @@
         width: 12rem;
         height: 2rem;
         font-family: 'Social-Gothic';
-        margin: -7rem 0 0 1rem;
+        /* topo | direita | inferior | esquerda */
+        margin: -7rem 0 0 5rem;
         font-size: 1rem;
     }
 }
@@ -79,7 +81,7 @@
         height: 3rem;
         font-family: 'Social-Gothic';
         /* topo | direita | inferior | esquerda */
-        margin: 0 0 0 37rem;
+        margin: 0 0 0 40rem;
         font-size: 1.5rem;
     }
     #patrocinio_button:hover{
