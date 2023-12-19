@@ -1,21 +1,17 @@
 /*CELULAR*/
-@media screen and (min-width:375px){
+@media screen and (min-width:0){
     .banner{
         width: 100%;
         position: relative;
-       /* width: 25rem;*/
-       
     }
     .banner_img{
         width: 100%;
-        
     }
     .text{
         font-size: 1rem;
         position: absolute;
         margin-top: 1rem;
-        margin-left: -1rem;
-        width: 25rem;
+        width: 100%;
         text-align: center;
         
     }
