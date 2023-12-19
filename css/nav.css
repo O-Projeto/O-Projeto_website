@@ -12,7 +12,6 @@
         display: none;
         flex-direction: row;
         justify-content: space-around;
-        height: 8em;
     }
     #nav{
         text-decoration: none;
@@ -67,14 +66,16 @@
         margin: 1rem;
         font-size: 1rem;
     }
-    #hamb_cel, #hamb_cel_close{
+    #hamb_cel{
         display:none;
+    }
+    #hamb_cel_close{
+        display: none;
     }
 }
 /*NOTEBOOK*/
 @media screen and (min-width:1024px) {
     .nav{
-        display: block;
         flex-direction: row;
         justify-content: space-between;
         margin: 0 auto;
@@ -88,13 +89,13 @@
     }
     .navegador{
         background-color: var(--dark_blue);
-        margin-top: 1rem;
+        margin-top: -5rem;
         margin-bottom: 2rem;
+        margin-left: 45em;
         padding: 1rem;
         border: none;
         border-radius: 1rem 0rem 0rem 1rem;
-        width: 35rem;
-        display: none;
+        width: 50%;
 
     }
     #nav{
@@ -111,7 +112,10 @@
     #sol{
         width: 1.5rem;
     }
-    #hamb_cel, #hamb_cel_close{
+    #hamb_cel{
        display: none;
+    }
+    #hamb_cel_close{
+        display: none;
     }
 }
