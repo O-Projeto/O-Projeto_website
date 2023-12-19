@@ -57,14 +57,14 @@
 /*NOTEBOOK*/
 @media screen and (min-width:1024px) {
     .patrocionio{
-        margin: 5rem 0 10rem 0; 
+        margin: 3rem 0 10rem 0; 
         width:100%;
     }
     #img_banner{
         width: 100%;
     }
     .text_patrocionio{
-        margin: -25rem 0 0 5rem;
+        margin: -25rem 0 0 0;
         font-size: 2rem;
         text-align: center;
         color: var(--white);
@@ -78,7 +78,8 @@
         width: 15rem;
         height: 3rem;
         font-family: 'Social-Gothic';
-        margin: 0 0 0 1rem;
+        /* topo | direita | inferior | esquerda */
+        margin: 0 0 0 37rem;
         font-size: 1.5rem;
     }
     #patrocinio_button:hover{
