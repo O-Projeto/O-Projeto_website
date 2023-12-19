@@ -9,8 +9,8 @@
     }
     .fred_popup{
         background-color: var(--dark_blue);
-        width: 15rem;
-        height: 28rem;
+        width: 100%; /*15rem*/
+        height: 100%; /*28rem*/
         display: flex;
         flex-direction: column;
         border-radius: 2rem;
