@@ -1,5 +1,5 @@
 /*CELULAR*/
-@media screen and (min-width:0) {
+@media screen and (min-width:375px) {
     .text_objetivos{
         font-family: "Roboto";
         text-align: center;
