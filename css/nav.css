@@ -1,11 +1,11 @@
-@media screen and (min-width:375px){
+@media screen and (min-width:0){
     #logo_img{
         width: 5rem;
         padding: 2px;
-        margin-left: 10rem;
+        margin-left: 2rem;
     }
     .nav{
-
+        
         flex-direction: row;
         justify-content: space-around;
     }
@@ -17,7 +17,9 @@
         border: none;
         border-radius: 0.5rem;
         width: 20rem;
+        /*baixo - right - top - left*/
         margin: 1rem 5rem 1rem 2.5rem;
+        display:none;
 
     }
     #nav{
@@ -28,6 +30,17 @@
     }
     #hamb_cel{
         width: 2rem;
+        align-items: center;
+        /* topo | direita | inferior | esquerda */
+        margin: -25em 0 3em 22em;
+        display: relative;
+    }
+    #hamb_cel_close{
+        width: 2rem;
+        align-items: center;
+        /* topo | direita | inferior | esquerda */
+        margin: -25em 0 3em 22em;
+        display: none;
     }
 }
 /*TABLET OK*/
@@ -60,8 +73,8 @@
         margin: 1rem;
         font-size: 1rem;
     }
-   #hamb_cel{
-        display: none;
+    #hamb_cel,  #hamb_cel_close{
+        display:none;
     }
 }
 /*NOTEBOOK*/
@@ -103,7 +116,7 @@
     #sol{
         width: 1.5rem;
     }
-    #hamb_cel{
-        display: none;
+    #hamb_cel, #hamb_cel_close{
+       display: none
     }
 }
