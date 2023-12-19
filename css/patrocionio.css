@@ -1,5 +1,5 @@
 /*celular*/
-@media screen and (min-width:0) {
+@media screen and (min-width:375px) {
     .patrocionio{
         margin: 3rem 0 2rem 0; 
     }
