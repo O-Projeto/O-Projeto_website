@@ -114,18 +114,19 @@ function email(){
 function hambur_cel(){
     var nav = document.querySelector(".navegador")
     var close_hamb = document.getElementById("hamb_cel_close")
+    var hamb_cel = document.getElementById("hamb_cel")
     
-    document.getElementById("hamb_cel").addEventListener("click", function() {
-        /*nav.style.display = 'block';*/
-        if (this.style.display == 'none') {
-            nav.style.display = 'none'; // Or use 'block' if you intended 'relative' as a typo
-            close_hamb.style.display = 'block';
-        }else {
-            nav.style.display = 'block';
-            this.style.display = 'none';
-    
-        }
-      
+    //ABRIR
+    hamb_cel.addEventListener("click", function() {
+        nav.style.display = 'block';
+        this.style.display = 'none';
+        close_hamb.style.display = 'block';
+    })
+    //FECHAR    
+    close_hamb.addEventListener("click", function(){
+        this.style.display = 'none';
+        nav.style.display = 'none';
+        hamb_cel.style.display = 'block';
     })
 }   
     
