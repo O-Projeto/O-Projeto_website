@@ -19,14 +19,14 @@ $(document).ready(function () {
 //pessoas
     function startAutoRotation() { //inicia rotação 
         autoRotationInterval = setInterval(function () {
-            if (currentSlide <= 180 ) { // tamanho dos quarados
-                goToSlide(currentSlide + 2);
+            if (currentSlide <= 15 ) { // tamanho dos quarados
+                goToSlide(currentSlide + 1);
             } else {
                 // Ir suavemente de volta para o primeiro quadrado
                 slider.css("transition", "none");
                 goToSlide(0);
                 setTimeout(function () {
-                    slider.css("transition", "transform 0.5s ease-in-out");
+                    slider.css("transition", "transform 0.7s ease-in-out");
                 }, 0);
             }
         }, 2000); // Altere o valor para ajustar a velocidade da rotação
@@ -35,7 +35,7 @@ $(document).ready(function () {
     //obj
     function startAutoRotation_obj() { //inicia rotação 
         autoRotationInterval = setInterval(function () {
-            if (currentSlide <= 15  ) { // tamanho dos quarados
+            if (currentSlide <= 8  ) { // tamanho dos quarados
                 goToSlide(currentSlide + 1);
             } else {
                 // Ir suavemente de volta para o primeiro quadrado
@@ -109,5 +109,28 @@ function email(){
         window.location.href = linkEmail;
     });
 }
+
+//HAMBURGUER CELULAR 
+function hambur_cel(){
+    var nav = document.querySelector(".navegador")
+    var close_hamb = document.getElementById("hamb_cel_close")
+    
+    document.getElementById("hamb_cel").addEventListener("click", function() {
+        /*nav.style.display = 'block';*/
+        if (this.style.display == 'none') {
+            nav.style.display = 'none'; // Or use 'block' if you intended 'relative' as a typo
+            close_hamb.style.display = 'block';
+        }else {
+            nav.style.display = 'block';
+            this.style.display = 'none';
+    
+        }
+      
+    })
+}   
+    
+
+
 carrosseis();
 email();
+hambur_cel();
