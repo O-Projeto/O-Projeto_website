@@ -20,7 +20,7 @@
     .carrossel_people {
         display: flex;
         overflow: hidden;
-        width: 25rem; /* Garante que o carrossel ocupe a largura completa do container pai */
+        width: 100%; /* Garante que o carrossel ocupe a largura completa do container pai */
     }
     .person {
         flex: 0 0 50.20%; 
