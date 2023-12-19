@@ -1,5 +1,5 @@
 /*CELULAR OK*/
-@media screen and (min-width:375px) {
+@media screen and (min-width:0) {
     .container1{
         background-color: var(--grey);
         margin-bottom: -8px;
@@ -31,6 +31,9 @@
     }
     .menu_footer{
         margin-right: 1rem;
+    }
+    #footer{
+        color: #969696;
     }
 }
 
@@ -72,6 +75,9 @@
     #footer{
         font-size: 0.8rem;
     }
+    #footer{
+        color: #969696;
+    }
 }
 /*NOTEBOOK*/
 @media screen and (min-width: 1024px) {
@@ -102,5 +108,8 @@
         margin-left: 5rem;
         text-decoration: none;
         font-family: 'Social-Gothic';
+    }
+    #footer{
+        color: #969696;
     }
 }
