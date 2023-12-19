@@ -1,8 +1,8 @@
 @media screen and (min-width:375px){
     #logo_img{
-        width: 5rem;
+        width: 100%;
         padding: 2px;
-        margin-left: 10rem;
+        /*margin-left: 10rem;*/
     }
     .nav{
 
