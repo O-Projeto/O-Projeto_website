@@ -10,7 +10,7 @@
     .fred_popup{
         background-color: var(--dark_blue);
         width: 15rem; /*15rem*/
-        height: 28rem; /*28rem*/
+        /*height: 28rem; /*28rem*/
         display: flex;
         flex-direction: column;
         border-radius: 2rem;
@@ -45,6 +45,7 @@
 @media screen and (min-width:768px) {
     .projetos{
         text-align: center;
+        align-itens: center;
         width: 100%;
     }
     #title{
