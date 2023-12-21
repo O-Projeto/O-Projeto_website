@@ -30,14 +30,15 @@
 /*TABLET OK*/
 @media screen and (min-width:768px) {
     .patrocionio{
-        margin: 5rem 0 10rem 0; 
+        margin: 5rem 0 10rem 0;
+        width: 100%; 
     }
     #img_banner{
         width: 100%;
     }
     .text_patrocionio{
-        margin: -15rem 0 4rem 2rem;
-        font-size: 1.7rem;
+        margin: -16rem 0 4rem 2rem;
+        font-size: 1.6rem;
         text-align: center;
         color: var(--white);
         font-family: 'Roboto';
@@ -50,7 +51,7 @@
         width: 12rem;
         height: 2rem;
         font-family: 'Social-Gothic';
-        margin: -7rem 0 0 1rem;
+        margin: 0 0 0 18rem;
         font-size: 1rem;
     }
 }
