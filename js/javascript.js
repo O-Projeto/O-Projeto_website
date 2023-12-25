@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     function goToSlide(slideIndex) {
         currentSlide = slideIndex;
-        const translateX = -currentSlide * 250; // 120px é a largura de cada quadrado
+        const translateX = -currentSlide * 500; // 120px é a largura de cada quadrado
         slider.css("transform", `translateX(${translateX}px)`);
         slider_obj.css("transform", `translateX(${translateX}px)`);
     }
@@ -114,10 +114,10 @@ function email(){
 function hambur_cel(){
     var nav = document.querySelector(".navegador")
     var close_hamb = document.getElementById("hamb_cel_close")
-    var hamb_cel = document.getElementById("hamb_cel")
-    
+    var hamb_cel = document.getElementById("hamb_cel")    
     //ABRIR
     hamb_cel.addEventListener("click", function() {
+        
         nav.style.display = 'block';
         this.style.display = 'none';
         close_hamb.style.display = 'block';
@@ -129,9 +129,22 @@ function hambur_cel(){
         hamb_cel.style.display = 'block';
     })
 }   
+
+function light_and_dark(){
+    var body = document.body;
+    var moonIcon = document.getElementById("moon");
+    var sunIcon = document.getElementById("sun");
+
+    body.classList.toggle('dark');
+
+    moonIcon.style.display = body.classList.contains('dark') ? 'none' : 'inline';
+    sunIcon.style.display = body.classList.contains('dark') ? 'inline' : 'none';
     
+
+}
 
 
 carrosseis();
 email();
 hambur_cel();
+
