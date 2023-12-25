@@ -52,6 +52,15 @@
     }
     #sol{
         width: 1.5rem;
+        visibility: hidden;
+    
+    }
+    #sun-icon {
+        display: none;
+      }
+    #moon{
+        width: 1.5rem;
+    
     }
 }
 /*TABLET OK*/
@@ -95,6 +104,14 @@
         transition: transform 0.5s ease-in-out; 
     }
     #sol{
+        width: 1.5rem;
+        visibility: hidden;
+    
+    }
+    #sun-icon {
+        display: none;
+      }
+    #moon{
         width: 1.5rem;
     }
     #hamb_cel{
@@ -149,7 +166,11 @@
         transition: transform 0.5s ease-in-out; 
         margin: 0 0 0.5px 0;
     }
-    #sol{
+    
+    #sun{
+        display: none;
+    }
+    #moon{
         width: 1.5rem;
     }
     #hamb_cel{
