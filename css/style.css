@@ -5,13 +5,13 @@
     --ligth_blue: #4a8fc8;
     --green: #21776c;
     --black: #101010;
-    --grey: #414141;
+    --grey: #1b1b1b;
     --light_grey: #dbdbdb;
     --white: #f6f6f6;
 }
 
 html{
-    background-color: var(--white);
+    
     font-family: "social-gothic";
     font-style: normal;
     overflow-x: hidden;
@@ -19,6 +19,18 @@ html{
     margin-right: -8px;
     
 } 
+body {
+    transition: background-color 0.5s ease;
+}
+.light {
+    background-color: var(--white);
+    color: var(--black); 
+}
+
+.dark {
+    background-color: var(--grey); 
+    color: var(--white); 
+}
 @font-face {
     font-family: "roboto";
     font-weight: 400;
