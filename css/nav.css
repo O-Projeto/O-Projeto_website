@@ -7,32 +7,27 @@
     .navegador{
         background-color: var(--dark_blue);
         /* topo | direita | inferior | esquerda */
-        height: 25em;
+        height: 10em;
         width: 100%;
         display: none;
         text-align: center;
-        margin: 2em 0 2em 0;
+        margin: 2em 0 3em 0;
         flex-direction: column;
         
     }
     #nav{
         text-decoration: none;
         color: var(--white);
-        display: flex;
-        margin: 2em 0 3em 0;
-        text-align: center;
-        justify-content: space-around;
-       
+        margin: 0 0 9px 0;
+        display: block;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
         
     }
     #nav:hover{
         text-decoration: none;
         color: var(--yellow);
-        display: flex;
-        margin: 2em 0 3em 0;
-        text-align: center;
-        justify-content: space-around;
-       
         
     }
     /*ICONNNN - NÃO MEXERR*/
@@ -50,12 +45,16 @@
         margin: -3em 0 3em 22em;
         display: none;
     }
-    #sun {
+    #sun{
         display: none;
       }
     #moon{
         width: 1.5rem;
     
+    }
+    nav a{
+        display: inline-block;
+        margin-right: 15px;
     }
 }
 /*TABLET OK*/
@@ -67,7 +66,7 @@
         margin-left: 5rem;
     }
     .nav{
-        display: block;
+        display: inline-block;
         flex-direction: row;
         justify-content: space-around;
        /* margin-left: 3rem;*/
@@ -79,11 +78,9 @@
         margin-bottom: 1rem;*/
         padding: 1rem;
         border: none;
-        border-radius: 1rem;
-        width: 100%;
-        margin: 1em 0 0 0;
-        display: block;
 
+        width: 100%;
+        height: 20em;
 
     }
     #nav{
@@ -98,7 +95,7 @@
         transition: 0.5s;
         transition: transform 0.5s ease-in-out; 
     }
-    #sun {
+    #sun{
         display: none;
       }
     #moon{
@@ -110,14 +107,6 @@
         /* topo | direita | inferior | esquerda */
         margin:-3em 0 3em 40em;
     }
-    #hamb_cel_close{
-        
-        width: 1.5rem;
-        align-items: center;
-        /* topo | direita | inferior | esquerda */
-        margin: -3em 0 3em 40em;
-        display: none;
-    }
 }
 /*NOTEBOOK*/
 @media screen and (min-width:1024px) {
@@ -127,41 +116,40 @@
         margin-left: 5rem;
     }
     .nav{  
-        margin: 0 0 0 1em;
-        padding: 1em;
-        margin-left: 1rem;
+       align-items: center;
     
     }
-    .navegador{
+    .navegador {
         background-color: var(--dark_blue);
         padding: 1rem;
-        margin: -5rem 0 2em 50em;
-        display: flex;
+        margin: -5rem 0 2em 53em;
         border: none;
         border-radius: 1rem 0rem 0rem 1rem;
-        flex-direction: row;
-        justify-content: space-around;
         height: 1em;
-        width: 40rem;
+        width: 40em
+      
     }
     #nav{
         text-decoration: none;
         color: var(--white);
-        margin: -0.3rem;
-        font-size: 1rem;    
+        margin: -0.5rem 0 0 1em;
+        font-size: 1.2rem;   
+        display: inline-block; 
+        justify-content: space-between;
+
     }
+
     #nav:hover{
         color: var(--yellow);
-        transition: 0.5s;
-        transition: transform 0.5s ease-in-out; 
-        margin: 0 0 0.5px 0;
+        transition: 0.5s ease-in-out; 
     }
     
     #sun{
         display: none;
+        margin: 0 0 0 3em;
     }
     #moon{
-        width: 1.5rem;
+        margin: 0 auto;
     }
     #hamb_cel{
        visibility: hidden;
