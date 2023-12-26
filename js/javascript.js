@@ -110,24 +110,10 @@ function email(){
     });
 }
 
-//HAMBURGUER CELULAR 
-function hambur_cel(){
+function menu(){
     var nav = document.querySelector(".navegador")
-    var close_hamb = document.getElementById("hamb_cel_close")
-    var hamb_cel = document.getElementById("hamb_cel")    
-    //ABRIR
-    hamb_cel.addEventListener("click", function() {
-        
-        nav.style.display = 'block';
-        this.style.display = 'none';
-        close_hamb.style.display = 'block';
-    })
-    //FECHAR    
-    close_hamb.addEventListener("click", function(){
-        this.style.display = 'none';
-        nav.style.display = 'none';
-        hamb_cel.style.display = 'block';
-    })
+    nav.style.display = (nav.style.display === 'block') ? 'none' : 'block';
+
 }   
 
 function light_and_dark(){
@@ -146,6 +132,6 @@ function light_and_dark(){
 
 carrosseis();
 email();
-hambur_cel();
+menu();
 light_and_dark();
 
