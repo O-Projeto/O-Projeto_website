@@ -65,20 +65,28 @@
         padding: 5px;
         margin-left: 5rem;
     }
-    .nav{
-        display: inline-block;
+    .nav a:not(:first-child) {display: none;} .navegador a.hamb_cel{
         flex-direction: row;
         justify-content: space-around;
-       /* margin-left: 3rem;*/
+        float: right;
+        display: block;
+
     }
     
+    .navegador.responsive a.hamb_cel {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navegador.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
     .navegador{
         background-color: var(--dark_blue);
-        /*margin-top: 1rem;
-        margin-bottom: 1rem;*/
         padding: 1rem;
         border: none;
-
         width: 100%;
         height: 20em;
 
@@ -112,7 +120,6 @@
 @media screen and (min-width:1024px) {
     #logo_img{
         width: 108px;
-        padding: 5px;
         margin-left: 5rem;
     }
     .nav{  
@@ -120,13 +127,20 @@
     
     }
     .navegador {
-        background-color: var(--dark_blue);
+       /* background-color: var(--dark_blue);
         padding: 1rem;
-        margin: -5rem 0 2em 53em;
+        margin: -5rem 0 2em 47em;
         border: none;
         border-radius: 1rem 0rem 0rem 1rem;
         height: 1em;
-        width: 40em
+        width: 40em;*/
+
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
       
     }
     #nav{
@@ -136,20 +150,22 @@
         font-size: 1.2rem;   
         display: inline-block; 
         justify-content: space-between;
-
+    }
+    .navegador .hamb_cel {
+        display: none;
     }
 
-    #nav:hover{
+    .navegador:hover{
         color: var(--yellow);
         transition: 0.5s ease-in-out; 
     }
     
     #sun{
         display: none;
-        margin: 0 0 0 3em;
+        margin: 0 auto;
     }
     #moon{
-        margin: 0 auto;
+        margin: 0 3em 0 0;
     }
     #hamb_cel{
        visibility: hidden;

@@ -12,21 +12,21 @@ $(document).ready(function () {
 
     function goToSlide(slideIndex) {
         currentSlide = slideIndex;
-        const translateX = -currentSlide * 500; // 120px é a largura de cada quadrado
+        const translateX = -currentSlide * 120; // 120px é a largura de cada quadrado
         slider.css("transform", `translateX(${translateX}px)`);
         slider_obj.css("transform", `translateX(${translateX}px)`);
     }
 //pessoas
     function startAutoRotation() { //inicia rotação 
         autoRotationInterval = setInterval(function () {
-            if (currentSlide <= 15 ) { // tamanho dos quarados
+            if (currentSlide <= 8 ) { // tamanho dos quarados
                 goToSlide(currentSlide + 1);
             } else {
                 // Ir suavemente de volta para o primeiro quadrado
                 slider.css("transition", "none");
                 goToSlide(0);
                 setTimeout(function () {
-                    slider.css("transition", "transform 0.7s ease-in-out");
+                    slider.css("transition", "transform 0.1s ease-in-out");
                 }, 0);
             }
         }, 2000); // Altere o valor para ajustar a velocidade da rotação
@@ -42,7 +42,7 @@ $(document).ready(function () {
                 slider_obj.css("transition", "none");
                 goToSlide(0);
                 setTimeout(function () {
-                    slider_obj.css("transition", "transform 0.5s ease-in-out");
+                    slider_obj.css("transition", "transform 0.7s ease-in-out");
                 }, 0);
             }
         }, 2000); // Altere o valor para ajustar a velocidade da rotação
@@ -52,7 +52,7 @@ $(document).ready(function () {
         clearInterval(autoRotationInterval);
     }
 
-    prevButton.click(function () { //seta esqr
+    /*prevButton.click(function () { //seta esqr
         stopAutoRotation();
         if (currentSlide > 0) {
             goToSlide(currentSlide - 1);
@@ -80,7 +80,7 @@ $(document).ready(function () {
             }, 0);
         }
         startAutoRotation();
-    });
+    });*/
 
     startAutoRotation();
     startAutoRotation_obj();
@@ -111,8 +111,13 @@ function email(){
 }
 
 function menu(){
-    var nav = document.querySelector(".navegador")
-    nav.style.display = (nav.style.display === 'block') ? 'none' : 'block';
+    var nav = document.getElementById("navbar")
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+    //nav.style.display = (nav.style.display === 'block') ? 'none' : 'block';
 
 }   
 
