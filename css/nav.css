@@ -1,65 +1,33 @@
-@media screen and (min-width:0){
-    #logo_img{
-        width: 5rem;
-        padding: 2px;
-        margin-left: 3rem;
-    }
-    .navegador{
-        background-color: var(--dark_blue);
-        /* topo | direita | inferior | esquerda */
-        height: 10em;
-        width: 100%;
-        display: none;
-        text-align: center;
-        margin: 2em 0 3em 0;
-        flex-direction: column;
-        
-    }
-    #nav{
-        text-decoration: none;
-        color: var(--white);
-        margin: 0 0 9px 0;
-        display: block;
-        position: static;
-        background-color: transparent;
-        box-shadow: none;
-        
-    }
-    #nav:hover{
-        text-decoration: none;
-        color: var(--yellow);
-        
-    }
-    /*ICONNNN - NÃO MEXERR*/
-    #hamb_cel{
-        width: 1.7rem;
-        align-items: center;
-        /* topo | direita | inferior | esquerda */
-        margin:-3em 0 3em 22em;
-
-    }
-    #hamb_cel_close{
-        width: 1.5rem;
-        align-items: center;
-        /* topo | direita | inferior | esquerda */
-        margin: -3em 0 3em 22em;
-        display: none;
-    }
-    #sun{
-        display: none;
-      }
-    #moon{
-        width: 1.5rem;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: var(--dark_blue);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: var(--white);
+}
+.nav:hover{
+    text-decoration: none;
+    color: var(--yellow);
     
-    }
-    nav a{
-        display: inline-block;
-        margin-right: 15px;
-    }
+}
+.logo-img {
+    width: 5rem;
+    padding: 2px;
+    margin-left: 3rem;
+}
+header nav a.icon {
+    color: var(--white);
 }
 /*TABLET OK*/
 @media screen and (min-width:768px) {
-    
     #logo_img{
         width: 108px;
         padding: 5px;
@@ -116,6 +84,7 @@
         margin:-3em 0 3em 40em;
     }
 }
+
 /*NOTEBOOK*/
 @media screen and (min-width:1024px) {
     #logo_img{
