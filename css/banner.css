@@ -62,10 +62,10 @@
         position: relative;
     }
     .text{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         position: absolute;
         margin-top: 3rem;
-        margin-left: 20rem;
+        margin-left: 8rem;
         width: 22em;
     }
     #text_banner{

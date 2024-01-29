@@ -111,11 +111,12 @@
     #button_inscreva{
         border: none;
         border-radius: 1rem;
-        width: 12rem;
-        height: 2.5rem;
+        width: 20rem;
+        height: 3.5rem;
         color: var(--dark_blue);
         font-family: 'Social-Gothic';
         margin-top: 7rem;  
+        font-size: 1.2em;
 
     }
     #button_inscreva:hover{
