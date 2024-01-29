@@ -112,12 +112,7 @@ function email(){
 
 function menu(){
     var nav = document.getElementById("navbar")
-    if (x.className === "navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "navbar";
-    }
-    //nav.style.display = (nav.style.display === 'block') ? 'none' : 'block';
+    nav.style.display = (nav.style.display === 'block') ? 'none' : 'block';
 
 }   
 
