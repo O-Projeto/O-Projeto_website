@@ -30,34 +30,27 @@
         width: 100%;
 
     }
-    .carrossel_objetivos{
-        display: flex;
-        overflow: hidden;
-        width: 100%;
-        align-items: center;
-        
-    }
     .comunidade{
-        flex: 0 0 15em; /* Define a largura para exibir apenas 3 pessoas de cada vez */
-        transition: transform 0.5s ease-in-out; 
+
         text-align: center;
         padding: 2px;
         border-radius: 1rem;
         background-color: var(--yellow);
         font-family: "Roboto";
         text-align: center;
-        margin-left:5rem;
         width: 100%;
-        height: 15em;
+        height: 18em;
     }
-    #icon{
+    .comunidade img{
         width: 2.5rem;
         align-items: center;
-        margin-left: -1rem;
         padding: 1rem;
     }
     #text_obj{
         width: 10rem;
+    }
+    #gothic{
+        font-family: 'Social-Gothic';
     }
 }
 
@@ -93,30 +86,18 @@
         text-align: center;
 
     }
-    .carrossel_objetivos{
-        display: flex;
-        overflow: hidden;
-        width: 100%;
-        
-    }
     .comunidade{
-        flex: 0 0 33.33%; /* Define a largura para exibir apenas 3 pessoas de cada vez */
-        transition: transform 0.5s ease-in-out; 
         text-align: center;
-        padding: 20px;
-
-        width: 18rem;
+        width: 15rem;
         height: 17rem;
         border-radius: 1rem;
         background-color: var(--yellow);
         font-family: "Roboto";
         text-align: center;
-        margin-left:5rem;
     }
-    #icon{
+    .comunidade img{
         width: 5rem;
         align-items: center;
-        margin-left: 2rem;
         padding: 1rem;
     }
     #text_obj{
@@ -127,6 +108,7 @@
     #gothic{
         font-family: 'Social-Gothic';
     }
+    
 }
 
 /*NOTEBOOK*/
