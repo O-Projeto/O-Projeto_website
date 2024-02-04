@@ -1,58 +1,69 @@
 /*CELULAR OK*/
-@media screen and (min-width:0) {
-    .projetos{
-        text-align: center;
-        margin: 0 0 0 3em;
-        width: 100%;
-    }
-    #title{
-        margin-right: 3em;
-        font-size: 1.3rem;
-    }
-    .fred_popup{
-        background-color: var(--dark_blue);
-        width: 75%;
-        height: 28rem;
-        display: relative;
-        flex-direction: column;
-        border-radius: 2rem;
-        margin:1em 2em 2em 1rem; /*baixo - right - top - left*/
-    }
-    #fred_img{
-        width: 12rem;
-        height: 10rem;
-        border-radius: 2rem;
-        margin:1.5em 1em -2.5em 1em; 
-    }
-    #b1bk_img, #mrmime_img{
-        width: 12rem;
-        height:10rem;
-        border-radius: 2rem;
-        margin:1.5em 1em -2.5em 1em; 
-    }
-    #text_popup{
-        color: var(--white);
-        margin-left: 3em;
-        width:70%;
-        font-size: 0.9rem;
-        margin-top: 4rem;
-        font-family: 'Roboto';
-    }
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
+#title {
+    font-size: 1.3rem;
+}
 
+.project-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fred_popup {
+    background-color: var(--dark_blue);
+    width: 75%;
+    height: 28rem;
+    display: relative;
+    flex-direction: column;
+    border-radius: 2rem;
+    margin: 1em 2em 2em 1rem;
+    /*baixo - right - top - left*/
+}
+
+#fred_img {
+    width: 12rem;
+    height: 10rem;
+    border-radius: 2rem;
+    margin: 1.5em 1em -2.5em 1em;
+}
+
+#b1bk_img,
+#mrmime_img {
+    width: 12rem;
+    height: 10rem;
+    border-radius: 2rem;
+    margin: 1.5em 1em -2.5em 1em;
+}
+
+#text_popup {
+    color: var(--white);
+    margin-left: 3em;
+    width: 70%;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+    font-family: 'Roboto';
+}
 
 /*TABLET OK*/
 @media screen and (min-width:768px) {
-    .projetos{
+    .projetos {
         text-align: center;
         width: 100%;
     }
-    #title{
-        text-align:center;
-        width:100%;
+
+    #title {
+        text-align: center;
+        width: 100%;
     }
-    .fred_popup{
+
+    .fred_popup {
         background-color: var(--dark_blue);
         width: 30rem;
         height: 30rem;
@@ -62,19 +73,24 @@
         margin-left: 9rem;
         margin-top: 2rem;
     }
-    #fred_img{
+
+    #fred_img {
         width: 22rem;
         height: 17rem;
         border-radius: 2rem;
         margin: 2rem 1rem -5rem 4rem;
     }
-    #b1bk_img, #mrmime_img{
+
+    #b1bk_img,
+    #mrmime_img {
         width: 22rem;
         height: 17rem;
         border-radius: 2rem;
-        margin: 2rem 37.5rem -5rem 4rem; /*baixo - left - top - right*/
+        margin: 2rem 37.5rem -5rem 4rem;
+        /*baixo - left - top - right*/
     }
-    #text_popup{
+
+    #text_popup {
         color: var(--white);
         margin-left: 8rem;
         width: 15rem;
@@ -82,16 +98,19 @@
         margin-top: 4rem;
     }
 }
+
 /*NOTEBOOK */
 @media screen and (min-width:1024px) {
-    .projetos{
-        text-align: center; 
+    .projetos {
+        text-align: center;
         width: 100%;
     }
-    #title{
+
+    #title {
         margin-left: 2rem;
         font-size: 2rem;
     }
+
     /*.fred_Acesso{
         width: 18rem;
         height: 22rem;
@@ -108,7 +127,7 @@
 
     /******************/
     /*PROJETOOSSS POP UP*/
-    .fred_popup{
+    .fred_popup {
         background-color: var(--dark_blue);
         width: 45rem;
         height: 20rem;
@@ -117,24 +136,30 @@
         margin-left: 25rem;
         margin-top: 2rem;
     }
-    #fred_img{
+
+    #fred_img {
         width: 15rem;
         border-radius: 2rem;
         margin: 2rem 37.5rem 0 2rem;
     }
-    #b1bk_img, #mrmime_img{
+
+    #b1bk_img,
+    #mrmime_img {
         width: 15rem;
         height: 16rem;
         border-radius: 2rem;
-        margin: 2rem 37.5rem 0 2rem; /*baixo - left - top - right*/
+        margin: 2rem 37.5rem 0 2rem;
+        /*baixo - left - top - right*/
     }
-    #close{
+
+    #close {
         color: var(--red);
         margin-left: 23rem;
         margin-top: 2rem;
         font-size: 1.5rem;
     }
-    #text_popup{
+
+    #text_popup {
         color: var(--white);
         margin-left: 20rem;
         margin-top: -16rem;

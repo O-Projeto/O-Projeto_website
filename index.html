@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,40 +16,51 @@
     <link rel="stylesheet" href="./css/participe.css">
     <link rel="stylesheet" href="./css/patrocionio.css">
     <link rel="stylesheet" href="./css/rodape.css">
-    <script src="./js/javascript.js" defer></script>
     <link rel="stylesheet" href="https://use.typekit.net/iji5bxg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="./js/javascript.js" defer></script>
 </head>
-<body class="light">
-    <section id="home">
-        <img src="./img/projeto.png" alt="logo Projeto" id="logo_img">
-        <a href="#" class="icon" class="light" onclick="menu()">
-            &#9776;
-        </a>
-        <nav class="nav" id="navbar">
-            
-            <a href="#home" id="nav">Home</a>
-            <a href="#section_objetivos" id="nav">Sobre Nós</a>
-            <a href="#section_local" id="nav">Onde Estamos?</a>
-            <a href="#section_participe" id="nav">Participe</a>
-            <a href="#" id="nav"><span id="sun" onclick="light_and_dark()">☀️</span></a>
-            <a href="#" id="nav"><span id="moon" onclick="light_and_dark()">&#127769</span></a>
-           
 
-            
+<body class="light">
+    <header id="home">
+        <nav class="nav" id="navbar">
+            <img src="./img/projeto.png" alt="logo Projeto" class="logo-img">
+            <button type="button" class="hamburger-button" onclick="toogleNavbar()">
+                <span class="material-symbols-outlined ">
+                    menu
+                </span>
+            </button>
+            <div id="navbar-content">
+                <button type="button" class="hamburger-button close" onclick="toogleNavbar()">
+                    <span class="material-symbols-outlined ">
+                        close
+                    </span>
+                </button>
+                <ul>
+                    <li><a class="active" href="#home" onclick="navigateTo(0)">Home</a></li>
+                    <li><a href="#section_objetivos" onclick="navigateTo(1)">Sobre Nós</a></li>
+                    <li><a href="#section_local" onclick="navigateTo(2)">Onde Estamos?</a></li>
+                    <li><a href="#section_participe" onclick="navigateTo(3)">Participe</a></li>
+                </ul>
+                <label class="theme-switcher-container">
+                    <input type="checkbox" onchange="toggleTheme()" id="theme-switcher-checkbox">
+                    <span class="theme-switcher round"></span>
+                </label>
+            </div>
         </nav>
-    </section>
-    <header class="banner">
+    </header>
+    <section class="banner">
         <div class="text">
             <p id="text_banner">Tem um <strong id="gothic">projeto</strong> e não<br> sabe por onde começar?</p>
             <p id="text_banner_down">A gente te ajuda!</p>
         </div>
         <img src="./img/banner.png" alt="banner tijolos azuis e fechas coloridas" class="banner_img">
-        
-    </header>
+    </section>
     <!--PESSOAS-->
-    <div class="people">
+    <section class="people">
         <h2>Conheça parte da Fundação</h2>
-        <swiper-container class="mySwiper"  navigation="true" loop="true" autoplay-delay="2500" slides-per-view="3" space-between="0">
+        <swiper-container class="mySwiper" navigation="true" loop="true" autoplay-delay="2500" slides-per-view="3"
+            space-between="0">
             <swiper-slide>
                 <div class="person">
                     <h3 id="nome_people">Guilherme</h3>
@@ -105,79 +117,88 @@
                     <p>Fundador</p>
                 </div>
             </swiper-slide>
-        </swiper-container>  
-            
-        
-    </div>
+        </swiper-container>
+
+
+    </section>
     <!--OBJETIVOS-->
     <section id="section_objetivos">
         <div class="objetivos">
-       
+
             <div class="text_objetivos">
                 <h2 id="subtitle">Sobre Nós</h2>
-                <p id="text_subtitle">A proposta do "O PROJETO" é popularizar, manter e agregar ao espaço multidisciplinar, criando uma comunidade focada no desenvolvimento pessoal e coletivo, por meio da realização de projetos individuais e em grupo.</p>
+                <p id="text_subtitle">A proposta do "O PROJETO" é popularizar, manter e agregar ao espaço
+                    multidisciplinar, criando uma comunidade focada no desenvolvimento pessoal e coletivo, por meio da
+                    realização de projetos individuais e em grupo.</p>
                 <h3 id="sub-subtitle">Nossos Objetivos:</h3>
             </div>
-          
+
             <!--Carrosel-->
-            <swiper-container class="Swiper-obj" pagination="true" pagination-clickable="true"  space-between="30"
-    slides-per-view="3" loop="true" centered-slides="true" autoplay-delay="2200" autoplay-disable-on-interaction="false">
-        <swiper-slide>
-            <div class="comunidade">
-                <img src="./img/multidao-de-usuarios.png" alt="pessoas juntos" >
-            <p>Estabelecer parcerias com outras <strong id="gothic">comunidades </strong>visando compartilhar.</p>
-        </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div class="comunidade">
-                <img src="./img/criatividade.png" alt="criatividade">
-                <p>Promover a <strong id="gothic">criativade</strong>  e ideias inovadoras.</p>
-            </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div class="comunidade">
-                <img src="./img/habilidades.png" alt="fenda" >
-                <p>Oferrcer workshops, palestras e muito mais, que ensinem <strong id="gothic">Habilidades Diversas</strong> .</p>
-            </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div class="comunidade">
-                <img src="./img/cultura_maker.png" alt="cultura maker" >
-                <p id="gothic">Cultura Maker</p>
-                <p>Criar um cultura de fazer, experimentar e aprender.</p>
-            </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div class="comunidade">
-                <img src="./img/projeto_icon.png" alt="projetos" >
-                <p>Disponibilizar recursos e equipamentos necessários para a realização dos <strong id="gothic">projetos</strong> .</p>
-            </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div class="comunidade">
-                <img src="./img/colaboracao.png" alt="colaboração" >
-                <p>Incentivar a <strong id="gothic">colaboração</strong>  entre estudantes de diferentes cursos e áreas de conhecimento.</p>
-            </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div class="comunidade">
-                <img src="./img/analise.png" alt="progresso" >
-                <p>Monitor o <strong id="gothic">progresso</strong>  do projeto or meio de indicadores, como o npumero de projetos realizados.</p>
-            </div>
-        </swiper-slide>
-    </swiper-container>
+            <swiper-container class="Swiper-obj" pagination="true" pagination-clickable="true" space-between="30"
+                slides-per-view="3" loop="true" centered-slides="true" autoplay-delay="2200"
+                autoplay-disable-on-interaction="false">
+                <swiper-slide>
+                    <div class="comunidade">
+                        <img src="./img/multidao-de-usuarios.png" alt="pessoas juntos">
+                        <p>Estabelecer parcerias com outras <strong id="gothic">comunidades </strong>visando
+                            compartilhar.</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="comunidade">
+                        <img src="./img/criatividade.png" alt="criatividade">
+                        <p>Promover a <strong id="gothic">criativade</strong> e ideias inovadoras.</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="comunidade">
+                        <img src="./img/habilidades.png" alt="fenda">
+                        <p>Oferrcer workshops, palestras e muito mais, que ensinem <strong id="gothic">Habilidades
+                                Diversas</strong> .</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="comunidade">
+                        <img src="./img/cultura_maker.png" alt="cultura maker">
+                        <p id="gothic">Cultura Maker</p>
+                        <p>Criar um cultura de fazer, experimentar e aprender.</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="comunidade">
+                        <img src="./img/projeto_icon.png" alt="projetos">
+                        <p>Disponibilizar recursos e equipamentos necessários para a realização dos <strong
+                                id="gothic">projetos</strong> .</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="comunidade">
+                        <img src="./img/colaboracao.png" alt="colaboração">
+                        <p>Incentivar a <strong id="gothic">colaboração</strong> entre estudantes de diferentes cursos e
+                            áreas de conhecimento.</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="comunidade">
+                        <img src="./img/analise.png" alt="progresso">
+                        <p>Monitor o <strong id="gothic">progresso</strong> do projeto or meio de indicadores, como o
+                            npumero de projetos realizados.</p>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
         </div>
     </section>
     <!--PROJETOS-->
-    <div class="projetos">
+    <section class="projetos">
         <h2 id="title">Conheça alguns dos projetos</h2>
-        <div class="fred">
+        <div class="project-cards">
             <div class="fred_popup">
                 <img src="./img/projetos/fred.png" alt="img fred" id="fred_img">
                 <div id="text_popup">
                     <!--<a href="#" id="close">X</a>-->
                     <h2>FRED</h2>
-                    <p>O Fred é um robo móvel que usa diversos sensores para se localizar e navegar até objetos, e claro sempre na velocidade.</p>
+                    <p>O Fred é um robo móvel que usa diversos sensores para se localizar e navegar até objetos, e claro
+                        sempre na velocidade.</p>
                     <li>1º Lugar no Trekking Indoor - Copa Pinhão 2023</li>
                     <!--<img src="#" alt="dono1">-->
                 </div>
@@ -187,36 +208,42 @@
                 <div id="text_popup">
                     <!--<a href="#" id="close">X</a>-->
                     <h2>B1B-K</h2>
-                    <p>"Bibica" é um robô de categoria Luta mini sumô autonomô. B1b-k consegue se localizar a partir de sensores em sua base e empurrar o adversário para fora do campo. </p>
-                </div>       
+                    <p>"Bibica" é um robô de categoria Luta mini sumô autonomô. B1b-k consegue se localizar a partir de
+                        sensores em sua base e empurrar o adversário para fora do campo. </p>
+                </div>
             </div>
             <div class="fred_popup">
                 <img src="./img/projetos/mrsmime.jpg" alt="img fred" id="mrmime_img">
                 <div id="text_popup">
                     <!--<a href="#" id="close">X</a>-->
                     <h2>MRS. MIME</h2>
-                    <p>Robô de categoria 'ArtBot'. Mrs.Mime tem o poder de replicar gestos de mãos feitos por ser humanos.</p>
+                    <p>Robô de categoria 'ArtBot'. Mrs.Mime tem o poder de replicar gestos de mãos feitos por ser
+                        humanos.</p>
                     <li>2º Lugar ArtBot - Copa Pinhão 2023</li>
                     <!--<img src="#" alt="dono1">-->
-                </div>       
-                
+                </div>
+
             </div>
         </div>
-    </div>
+    </section>
     <!--LOCALIZAÇÃO-->
     <section id="section_local">
         <div class="localizacao">
             <h2 class="title">Onde Estamos?</h2>
-            <p id="text">Estamos localizado na <strong id="gothic_loc">Tecnológica Federal do Paraná - UTFPR</strong></p>
+            <p id="text">Estamos localizado na <strong id="gothic_loc">Tecnológica Federal do Paraná - UTFPR</strong>
+            </p>
             <img src="./img/utfpr.jpeg" alt="UTFPR - IMG" id="UTFPR">
             <div class="infos">
                 <h3>Campus Centro - Rua Sete de Setembro</h3>
                 <p id="font">Bloco Q <br>
                     Andar Térreo<br>
                     Sala 13<br>
-                </p> 
+                </p>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.969743068633!2d-49.27139972492718!3d-25.439275077555873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce465f9b0c855%3A0xda22d429219f2f12!2sUniversidade%20Tecnol%C3%B3gica%20Federal%20do%20Paran%C3%A1%20%7C%20Curitiba%20Campus%20-%20Sede%20Centro!5e0!3m2!1sen!2sbr!4v1691672594904!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.969743068633!2d-49.27139972492718!3d-25.439275077555873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce465f9b0c855%3A0xda22d429219f2f12!2sUniversidade%20Tecnol%C3%B3gica%20Federal%20do%20Paran%C3%A1%20%7C%20Curitiba%20Campus%20-%20Sede%20Centro!5e0!3m2!1sen!2sbr!4v1691672594904!5m2!1sen!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
     <!--PARTICIPE-->
@@ -227,22 +254,24 @@
                 <h3>Venha Participar da comunidade!</h3>
                 <p id="phrase">Faça suas ideias evoluírem.</p>
                 <div class="interacoes">
-                    
-                    <a href="https://noteforms.com/forms/o-projeto-inscricao-ahgryi?notionforms=1&utm_source=notionforms"><button type="button" id="button_inscreva">Inscreva-se</button></a>
-                    <img src="./img/form_insc.jpeg" alt="print forma" id="img">  
+
+                    <a
+                        href="https://noteforms.com/forms/o-projeto-inscricao-ahgryi?notionforms=1&utm_source=notionforms"><button
+                            type="button" id="button_inscreva">Inscreva-se</button></a>
+                    <img src="./img/form_insc.jpeg" alt="print forma" id="img">
                 </div>
             </div>
         </div>
     </section>
     <!--PATROCINIO-->
-    <div class="patrocionio">
+    <section class="patrocionio">
         <img src="./img/banner.png" alt="banner" id="img_banner">
         <div class="text_patrocionio">
             <h2>Deseja entrar em contato?</h2>
-            <p>Ajude <strong id="gothic">O PROJETO</strong> a crescer!</p>  
-        </div>      
+            <p>Ajude <strong id="gothic">O PROJETO</strong> a crescer!</p>
+        </div>
         <button type="button" id="patrocinio_button">Clique Aqui</button>
-    </div>
+    </section>
     <!--RODAPE-->
     <footer>
         <div class="container1">
@@ -253,10 +282,12 @@
             </div>
             <div class="rede_social">
                 <div>
-                   <a href="https://www.instagram.com/o.projeto.utfpr/" ><img src="./img/instagram_white.png" alt="logo_insta" id="icon_social"></a>
-                    <a href="https://www.tiktok.com/@o.projeto.utfpr?_t=8fiqF3TOqBR&_r=1"><img src="./img/tiktok_white.png" alt="logo Tiktok" id="icon_social"></a> 
+                    <a href="https://www.instagram.com/o.projeto.utfpr/"><img src="./img/instagram_white.png"
+                            alt="logo_insta" id="icon_social"></a>
+                    <a href="https://www.tiktok.com/@o.projeto.utfpr?_t=8fiqF3TOqBR&_r=1"><img
+                            src="./img/tiktok_white.png" alt="logo Tiktok" id="icon_social"></a>
                 </div>
-               <p id="footer">©2023 Direitos Reservados. <strong id="gothic">O PROJETO</strong></p>
+                <p id="footer">©2023 Direitos Reservados. <strong id="gothic">O PROJETO</strong></p>
             </div>
         </div>
     </footer>
@@ -264,4 +295,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
+
 </html>

@@ -1,8 +1,10 @@
-:root{
-    --red : #d30f0f;
+:root {
+    --z-index-menubar: 500;
+
+    --red: #d30f0f;
     --yellow: #ffba08;
     --dark_blue: #04588c;
-    --ligth_blue: #4a8fc8;
+    --light_blue: #4a8fc8;
     --green: #21776c;
     --black: #101010;
     --grey: #1b1b1b;
@@ -10,31 +12,53 @@
     --white: #f6f6f6;
 }
 
-html{
-    font-family: "social-gothic";
+.theme-light {
+    --color-primary: var(--light_blue);
+    --color-secondary: var(--light_grey);
+    --color-accent: var(--green);
+    --font-color: var(--black);
+}
+
+.theme-dark {
+    --color-primary: var(--dark_blue);
+    --color-secondary: var(--grey);
+    --color-accent: var(--green);
+    --font-color: var(--white);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'social-gothic', sans-serif;
     font-style: normal;
-    overflow-x: hidden;
-    margin-left: -8px;
-    margin-right: -8px;
-    
-} 
+    scroll-behavior: smooth;
+}
+
 body {
     transition: background-color 0.5s ease;
+    margin: 0px;
+    overflow-x: hidden;
 }
-.light {
-    background-color: var(--white);
-    color: var(--black); 
+
+body.no-scroll {
+    overflow: hidden;
 }
-.dark {
-    background-color: var(--grey); 
-    color: var(--white); 
+
+section {
+    scroll-margin-top: 6rem;
 }
+
 @font-face {
     font-family: "roboto";
     font-weight: 400;
     font-style: normal;
     src: url("https://use.typekit.net/iji5bxg.css");
 }
+
 @font-face {
     font-family: "social-gothic";
     font-weight: 700;
@@ -42,15 +66,17 @@ body {
 }
 
 /*Barra de rolagem*/
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 10px;
 }
-body::-webkit-scrollbar-track{
-    background-color:var(--white);
+
+body::-webkit-scrollbar-track {
+    background-color: var(--white);
     /*height: 25rem;*/
 }
-body::-webkit-scrollbar-thumb{
-    background: var(--dark_blue);
+
+body::-webkit-scrollbar-thumb {
+    background: var(--grey);
     border-radius: 5rem;
     border: none;
     width: 0.2px;

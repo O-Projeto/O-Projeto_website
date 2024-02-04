@@ -1,54 +1,61 @@
 /*CELULAR*/
-@media screen and (min-width:0){
-    .banner{
-        width: 100%;
-        position: relative;
-    }
-    .banner_img{
-        width: 100%;
-    }
-    .text{
-        font-size: 1rem;
-        position: absolute;
-        margin-top: 1rem;
-        width: 100%;
-        text-align: center;
-        
-    }
-    #text_banner{
-        font-family: "roboto";
-        color: var(--white);
-        width: 100%;
-    
-    }
-    #text_banner_down{
-        color: var(--yellow);
-        font-size: 1rem;
-
-    }
+.banner {
+    width: 100%;
+    margin-top: 6rem;
+    scroll-margin-top: 0;
 }
+
+.banner_img {
+    width: 100%;
+}
+
+.text {
+    font-size: 1rem;
+    position: absolute;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+#text_banner {
+    font-family: "roboto";
+    color: var(--white);
+    width: 100%;
+
+}
+
+#text_banner_down {
+    color: var(--yellow);
+    font-size: 1rem;
+
+}
+
 /*TABLET*/
 @media screen and (min-width:768px) {
-    .banner{
+    .banner {
         width: 100%;
         position: relative;
     }
-    .banner_img{
+
+    .banner_img {
         width: 50rem
-        
     }
-    .text{
+
+    .text {
         font-size: 2rem;
         position: absolute;
         margin-top: 2rem;
-        
+
     }
-    #text_banner{
+
+    #text_banner {
         font-family: "roboto";
         color: var(--white);
         text-align: center;
     }
-    #text_banner_down{
+
+    #text_banner_down {
         color: var(--yellow);
         font-size: 1.5rem;
         text-align: center;
@@ -57,32 +64,37 @@
 
 /*NOTEBOOK*/
 @media screen and (min-width:1024px) {
-    .banner{
+    .banner {
         width: 100%;
         position: relative;
     }
-    .text{
+
+    .text {
         font-size: 3.5rem;
         position: absolute;
         margin-top: 3rem;
         margin-left: 8rem;
         width: 22em;
     }
-    #text_banner{
+
+    #text_banner {
         font-family: "roboto";
         color: var(--white);
     }
-    #text_banner_down{
+
+    #text_banner_down {
         color: var(--yellow);
         font-size: 2.7rem;
         text-align: center;
     }
-    .banner_img{
+
+    .banner_img {
         width: 100%;
-        
+
     }
+
     /*Qualquer fonte como Social Gothic*/
-    #gothic{
+    #gothic {
         font-family: "social-gothic";
     }
 }
