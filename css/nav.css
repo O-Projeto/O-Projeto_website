@@ -1,173 +1,109 @@
-header {
+nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 6rem;
-    background-color: var(--dark_blue);
-}
-.nav{
+    z-index: var(--z-index-menubar);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
-    color: var(--white);
+    background-color: var(--grey);
+    height: 6rem;
+    width: 100%;
+    padding: 0 1rem;
 }
-.nav:hover{
-    text-decoration: none;
-    color: var(--yellow);
-    
-}
-.logo-img {
+
+nav .logo-img {
     width: 5rem;
-    padding: 2px;
-    margin-left: 3rem;
+    height: 5rem;
 }
-header nav a.icon {
+
+nav button.hamburger-button {
+    appearance: none;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+nav button.hamburger-button.close {
+    position: absolute;
+    right: 0;
+    padding: 1.5rem;
+}
+
+nav button.hamburger-button span {
+    pointer-events: none;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+nav button.hamburger-button:focus {
+    outline: none;
+}
+
+nav button.hamburger-button:active {
+    transform: scale(1.2);
+}
+
+nav #navbar-content {
+    position: absolute;
+    width: 100vw;
+    width: 100svw;
+    height: 100vh;
+    height: 100svh;
+    background-color: var(--grey);
+    top: 0;
+    left: -100vw;
+    text-align: center;
+    transition: all .5s;
+}
+
+nav #navbar-content.open {
+    left: 0;
+}
+
+nav #navbar-content ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav #navbar-content ul li a {
+    font-size: 1.5rem;
+    text-decoration: none;
     color: var(--white);
 }
-/*TABLET OK*/
-@media screen and (min-width:768px) {
-    #logo_img{
-        width: 108px;
-        padding: 5px;
-        margin-left: 5rem;
-    }
-    .nav a:not(:first-child) {display: none;} .navegador a.hamb_cel{
-        flex-direction: row;
-        justify-content: space-around;
+nav #navbar-content ul li a:visited {
+    color: var(--white);
+}
+nav #navbar-content ul li a:hover,
+nav #navbar-content ul li a.active {
+    color: var(--yellow);
+    transition: .5s;
+}
+
+@media screen and (min-width: 768px) {
+    nav ul {
         float: right;
-        display: block;
+        margin-right: 1.5rem;
+    }
 
+    nav ul li {
+        display: inline-block;
+        line-height: 60px;
+        margin: 0 5px;
     }
-    
-    .navegador.responsive a.hamb_cel {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .navegador.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .navegador{
-        background-color: var(--dark_blue);
-        padding: 1rem;
-        border: none;
-        width: 100%;
-        height: 20em;
 
-    }
-    #nav{
-        text-decoration: none;
+    nav ul li a {
         color: var(--white);
-        font-size: 1.7rem;
-        display: block;
-        margin: 1em 0 0 0;
-    }
-    #nav:hover{
-        color: var(--yellow);
-        transition: 0.5s;
-        transition: transform 0.5s ease-in-out; 
-    }
-    #sun{
-        display: none;
-      }
-    #moon{
-        width: 1.5rem;
-    }
-    #hamb_cel{
-        width: 1.7rem;
-        align-items: center;
-        /* topo | direita | inferior | esquerda */
-        margin:-3em 0 3em 40em;
-    }
-}
-
-/*NOTEBOOK*/
-@media screen and (min-width:1024px) {
-    nav{
-        background-color: var(--dark_blue);
-        margin-top: -0.5em;
-        align-items: center;
-        margin-bottom: 1em;
-        height: 5em;
-    }
-    #logo_img{
-        width: 10em;
-        margin-top: 1em;
-        margin-left: 40em;
-        margin-bottom: 2em;
-    }
-
-    #navbar a{
-        text-decoration: none;
-        color: var(--white);
-        padding: 0.5em;
-        font-size: 1.2rem;   
-        display: inline-block; 
-        margin-left: 150px;
-    }
-    
-
-    nav a:hover{
-        color: var(--yellow);
-        transition: 0.5s ease-in-out; 
-    }
-    
-    #sun{
-        display: none;
-
-    }
-    #moon{
-        margin: 0 ;
-    }
-   
-    .icon{
-        visibility: hidden;
-    }
-}
-
-
-/*tablet*/
-
-/*#logo_img{
-        width: 95px;
-        padding: 2px;
-        margin-left: 18rem;
-    }
-    .nav{
-        display: block;
-        flex-direction: row;
-        justify-content: space-around;
-       /* margin-left: 3rem;
-    }
-    .navegador{
-        background-color: var(--dark_blue);
-        /*margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding: 1rem;
-        border: none;
-        border-radius: 1rem;
-        width: 28rem;
-        margin: 1rem 0 1rem 5rem;
-        display: block;
-
-    }
-    #nav{
-        text-decoration: none;
-        color: var(--white);
-        margin: 1rem;
         font-size: 1rem;
+        padding: 5px 13px;
+        border-radius: 3px;
+        text-transform: upparcase;
     }
-    #hamb_cel{
-        display:none;
-    }
-    #hamb_cel_close{
-        display: none;
-    }
-    #sol{
-        width: 1.5rem;
-    }
-*/
+}
+
+@media screen and (min-width:1024px) {}
