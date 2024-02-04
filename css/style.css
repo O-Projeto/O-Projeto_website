@@ -4,12 +4,26 @@
     --red: #d30f0f;
     --yellow: #ffba08;
     --dark_blue: #04588c;
-    --ligth_blue: #4a8fc8;
+    --light_blue: #4a8fc8;
     --green: #21776c;
     --black: #101010;
     --grey: #1b1b1b;
     --light_grey: #dbdbdb;
     --white: #f6f6f6;
+}
+
+.theme-light {
+    --color-primary: var(--light_blue);
+    --color-secondary: var(--light_grey);
+    --color-accent: var(--green);
+    --font-color: var(--black);
+}
+
+.theme-dark {
+    --color-primary: var(--dark_blue);
+    --color-secondary: var(--grey);
+    --color-accent: var(--green);
+    --font-color: var(--white);
 }
 
 * {
@@ -36,16 +50,6 @@ body.no-scroll {
 
 section {
     scroll-margin-top: 6rem;
-}
-
-.light {
-    background-color: var(--white);
-    color: var(--black);
-}
-
-.dark {
-    background-color: var(--grey);
-    color: var(--white);
 }
 
 @font-face {

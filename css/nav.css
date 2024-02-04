@@ -6,7 +6,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--grey);
+    background-color: var(--color-secondary);
     height: 6rem;
     width: 100%;
     padding: 0 1rem;
@@ -36,7 +36,7 @@ nav button.hamburger-button.close {
 
 nav button.hamburger-button span {
     pointer-events: none;
-    color: var(--white);
+    color: var(--font-color);
     font-size: 2rem;
 }
 
@@ -54,7 +54,7 @@ nav #navbar-content {
     width: 100svw;
     height: 100vh;
     height: 100svh;
-    background-color: var(--grey);
+    background-color: var(--color-secondary);
     top: 0;
     left: -100vw;
     text-align: center;
@@ -73,15 +73,81 @@ nav #navbar-content ul li {
 nav #navbar-content ul li a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: var(--white);
+    color: var(--font-color);
 }
+
 nav #navbar-content ul li a:visited {
-    color: var(--white);
+    color: var(--font-color);
 }
+
 nav #navbar-content ul li a:hover,
 nav #navbar-content ul li a.active {
-    color: var(--yellow);
+    color: var(--color-accent);
     transition: .5s;
+}
+
+nav .theme-switcher-container {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    display: inline-block;
+    width: 3.25rem;
+    height: 1.5rem;
+}
+
+nav .theme-switcher-container input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+nav .theme-switcher {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 2rem;
+}
+
+nav .theme-switcher:before {
+    position: absolute;
+    content: "";
+    height: 2.25rem;
+    width: 2.25rem;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
+    background: white url('https://i.ibb.co/FxzBYR9/night.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+nav input:checked+.theme-switcher {
+    background-color: var(--color-accent);
+}
+
+nav input:focus+.theme-switcher {
+    box-shadow: 0 0 1px var(--primary-color);
+}
+
+nav input:checked+.theme-switcher:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+    background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -90,6 +156,9 @@ nav #navbar-content ul li a.active {
     }
 
     nav #navbar-content {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
         position: static;
         background-color: transparent;
         width: initial;
@@ -103,6 +172,12 @@ nav #navbar-content ul li a.active {
 
     nav #navbar-content ul li a {
         font-size: 1.25rem;
+    }
+
+    nav .theme-switcher-container {
+        position: relative;
+        left: 0;
+        top: 0;
     }
 }
 

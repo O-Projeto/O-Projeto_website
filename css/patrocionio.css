@@ -85,7 +85,7 @@
     }
     #patrocinio_button:hover{
         cursor: pointer;
-        background-color: var(--ligth_blue);
+        background-color: var(--light_blue);
         color: var(--white);
         transition: 0.5s;
     }
