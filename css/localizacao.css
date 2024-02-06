@@ -118,15 +118,15 @@
         font-family: "Roboto";
         color: var(--white);
         text-align: center;
-        border:0;
         width: 100%;
+        margin-top: 2rem;
     }
     .title{
         background-color: var(--dark_blue);
         color: var(--white);
-        width: 100%;
-        text-align: center;
-        margin: 2rem 0 0 0;
+        width: 85%;
+        align-items: center;
+        margin-left: 3rem;
         border-radius: 0.5rem;
         font-size: 1.7rem;
         font-family: 'Social-gothic';
@@ -156,7 +156,6 @@
         width: 60rem;
         border: none;
         border-radius: 1rem;
-        margin: 4rem 0 1rem 0;
     }
     #font{
         font-family: 'Roboto';

@@ -61,6 +61,8 @@
     #title {
         text-align: center;
         width: 100%;
+        font-size: 2rem;
+        margin-top: 2rem;
     }
 
     .fred_popup {
@@ -70,8 +72,7 @@
         display: flex;
         flex-direction: column;
         border-radius: 2rem;
-        margin-left: 9rem;
-        margin-top: 2rem;
+        margin-left: 2rem;
     }
 
     #fred_img {
@@ -94,8 +95,8 @@
         color: var(--white);
         margin-left: 8rem;
         width: 15rem;
-        font-size: 0.8rem;
-        margin-top: 4rem;
+        font-size: 0.9rem;
+        margin-top: 6rem;
     }
 }
 
@@ -107,34 +108,17 @@
     }
 
     #title {
-        margin-left: 2rem;
+        margin-top: 2rem;
         font-size: 2rem;
     }
 
-    /*.fred_Acesso{
-        width: 18rem;
-        height: 22rem;
-        background-color: var(--dark_blue);
-        margin-top: 2rem;
-        border-radius: 2rem;
-        margin-left: 2rem;
-
-    }
-    #fred_img{
-        width: 15rem;
-        border-radius: 2rem;
-    }*/
-
-    /******************/
-    /*PROJETOOSSS POP UP*/
     .fred_popup {
         background-color: var(--dark_blue);
         width: 45rem;
         height: 20rem;
         display: flex;
         border-radius: 2rem;
-        margin-left: 25rem;
-        margin-top: 2rem;
+    
     }
 
     #fred_img {
@@ -152,17 +136,11 @@
         /*baixo - left - top - right*/
     }
 
-    #close {
-        color: var(--red);
-        margin-left: 23rem;
-        margin-top: 2rem;
-        font-size: 1.5rem;
-    }
 
     #text_popup {
         color: var(--white);
         margin-left: 20rem;
-        margin-top: -16rem;
+        margin-top: -12rem;
         width: 20rem;
         font-size: 1rem;
     }
