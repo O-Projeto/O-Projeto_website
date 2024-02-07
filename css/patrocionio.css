@@ -1,78 +1,73 @@
-/*celular*/
-@media screen and (min-width:0) {
-    .patrocionio{
-        margin: 3rem 0 2rem 0; 
-    }
-    #img_banner{
-        width: 100%;
-    }
-    .text_patrocionio{
-        margin: -10em 0 0 0; 
-        font-size: 0.9rem;
-        text-align: center;
-        color: var(--white);
-        font-family: 'Roboto';
-
-    }
-    #patrocinio_button{
-        border: none;
-        background-color: var(--yellow);
-        border-radius: 1rem;
-        width: 8rem;
-        height: 2rem;
-        font-family: 'Social-Gothic';
-        font-size: 0.6rem;
-        margin: 0 0 0 15em;
-    }
+.patrocinio{
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-image: url('../img/banner.png'); 
+    background-size: cover; 
+    background-position: center; 
 }
+.patrocinio h2{
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--white);
+    font-family: 'social-gothic';
+}
+.patrocinio p{
+    text-align: center;
+    color: var(--white);
+    font-family: 'roboto';
+}
+.patrocinio button{
+    border: none;
+    background-color: var(--yellow);
+    border-radius: 1rem;
+    width: 8rem;
+    height: 2rem;
+    font-family: 'Social-Gothic';
+    font-size: 0.6rem;
+    margin-top: 1.5rem;
+}
+
 
 
 /*TABLET OK*/
 @media screen and (min-width:768px) {
     .patrocionio{
-        margin: 5rem 0 10rem 0;
         width: 100%; 
     }
-    #img_banner{
-        width: 100%;
+    .patrocinio h2{
+        font-size: 2rem;
+        font-family: 'social-gothic';
     }
-    .text_patrocionio{
-        margin: -16rem 0 4rem 2rem;
-        font-size: 1.6rem;
-        text-align: center;
-        color: var(--white);
-        font-family: 'Roboto';
-
+    .patrocinio p{
+        font-size: 1.5rem;
     }
-    #patrocinio_button{
+    .patrocinio button{
         border: none;
         background-color: var(--yellow);
         border-radius: 1rem;
         width: 12rem;
         height: 2rem;
         font-family: 'Social-Gothic';
-        margin: 0 0 0 18rem;
         font-size: 1rem;
     }
 }
 /*NOTEBOOK*/
 @media screen and (min-width:1024px) {
     .patrocionio{
-        margin: 3rem 0 10rem 0; 
         width:100%;
     }
-    #img_banner{
-        width: 100%;
-    }
-    .text_patrocionio{
-        margin: -25rem 0 0 0;
+    .patrocinio h2{
         font-size: 2rem;
         text-align: center;
         color: var(--white);
-        font-family: 'Roboto';
+        font-family: 'social-gothic';
 
     }
-    #patrocinio_button{
+    .patrocinio p{
+        font-family: 'roboto';
+    }
+    .patrocinio button{
         border: none;
         background-color: var(--yellow);
         border-radius: 1rem;
@@ -80,10 +75,9 @@
         height: 3rem;
         font-family: 'Social-Gothic';
         /* topo | direita | inferior | esquerda */
-        margin: 0 0 0 40rem;
         font-size: 1.5rem;
     }
-    #patrocinio_button:hover{
+    .patrocinio button:hover{
         cursor: pointer;
         background-color: var(--light_blue);
         color: var(--white);

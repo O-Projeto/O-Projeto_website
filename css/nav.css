@@ -125,7 +125,7 @@ nav .theme-switcher:before {
     bottom: 0;
     margin: auto 0;
     -webkit-transition: 0.4s;
-    transition: 0.4s;
+    transition: 0.5s ease;
     box-shadow: 0 0px 15px #2020203d;
     background: white url('https://i.ibb.co/FxzBYR9/night.png');
     background-repeat: no-repeat;
@@ -148,6 +148,8 @@ nav input:checked+.theme-switcher:before {
     background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
     background-repeat: no-repeat;
     background-position: center;
+    transition: 0.5s ease;
+
 }
 
 @media screen and (min-width: 768px) {
