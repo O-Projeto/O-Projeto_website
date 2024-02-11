@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', _ => {
 // #endregion
 
 // #region Carroseis
-function carrosseis() {
+/*function carrosseis() {
     $(document).ready(function () {
         const slider = $(".person");
         const slider_obj = $(".comunidade");
@@ -169,12 +169,12 @@ function carrosseis() {
                 }, 0);
             }
             startAutoRotation();
-        });*/
+        });
 
         startAutoRotation();
         startAutoRotation_obj();
     });
-}
+}*/
 // #endregion
 
 // #region Email

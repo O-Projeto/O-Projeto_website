@@ -1,33 +1,33 @@
-/*CELULAR*/
 .banner {
     width: 100%;
     margin-top: 6rem;
     scroll-margin-top: 0;
 }
 
-.banner_img {
+.banner img {
     width: 100%;
 }
 
 .text {
-    font-size: 1rem;
+    font-size: 1.3rem;
     position: absolute;
     margin-top: 1rem;
     width: 100%;
     text-align: center;
+    margin-left: -0.5rem;
 
 }
 
-#text_banner {
+.text p{
     font-family: "roboto";
     color: var(--white);
-    width: 100%;
 
 }
 
 #text_banner_down {
     color: var(--yellow);
     font-size: 1rem;
+    font-family: 'social-gothic';
 
 }
 
@@ -37,11 +37,6 @@
         width: 100%;
         position: relative;
     }
-
-    .banner_img {
-        width: 50rem
-    }
-
     .text {
         font-size: 2rem;
         position: absolute;
@@ -49,15 +44,16 @@
 
     }
 
-    #text_banner {
+    .text p {
         font-family: "roboto";
         color: var(--white);
         text-align: center;
+        font-size: 2.5rem;
     }
 
     #text_banner_down {
         color: var(--yellow);
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
     }
 }
@@ -66,31 +62,25 @@
 @media screen and (min-width:1024px) {
     .banner {
         width: 100%;
-        position: relative;
+        display: fixed;
     }
 
     .text {
         font-size: 3.5rem;
         position: absolute;
-        margin-top: 3rem;
-        margin-left: 8rem;
-        width: 22em;
+        text-align: center;
+        margin-top: 6rem;
     }
 
-    #text_banner {
+    .text p {
         font-family: "roboto";
         color: var(--white);
     }
 
     #text_banner_down {
         color: var(--yellow);
-        font-size: 2.7rem;
+        font-size: 4rem;
         text-align: center;
-    }
-
-    .banner_img {
-        width: 100%;
-
     }
 
     /*Qualquer fonte como Social Gothic*/

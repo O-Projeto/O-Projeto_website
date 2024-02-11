@@ -17,6 +17,7 @@
     --color-secondary: var(--light_grey);
     --color-accent: var(--green);
     --font-color: var(--black);
+    
 }
 
 .theme-dark {
@@ -24,6 +25,9 @@
     --color-secondary: var(--grey);
     --color-accent: var(--green);
     --font-color: var(--white);
+    background-color: var(--grey);
+    color: var(--white);
+    transition: background-color 0.5s ease;
 }
 
 * {
@@ -39,7 +43,7 @@ html {
 }
 
 body {
-    transition: background-color 0.5s ease;
+    
     margin: 0px;
     overflow-x: hidden;
 }

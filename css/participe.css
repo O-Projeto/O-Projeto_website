@@ -1,45 +1,57 @@
 
-/*CELULAR*/
-@media screen and (min-width:0) {
-    .container{
-        text-align: center;
-    }
-    #infos_background{
-        background: linear-gradient(180deg, #1B7071 0%, #095D84 100%);
-        font-family: 'social-gothic';
-        color: var(--white);
-        font-size: 1.2rem;
-    }
-    .interacoes{
-        margin: 0 8rem -2rem 2.5em;
-    }
-    #phrase{
-        font-family: 'Roboto';
-    }
-
-    #img {
-        position: relative;
-        width: 100%;
-        border: none;
-        border-radius: 1rem;
-        /*NÃO RETIRAR*/
-        -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
-        margin-bottom: 2rem;
-        margin-left: 1.5em;
-
-    }
-    #button_inscreva{
-        border: none;
-        border-radius: 1rem;
-        width: 100%;
-        height: 1.7rem;
-        color: var(--dark_blue);
-        font-family: 'Social-Gothic';
-        margin-left: 2rem;
-        margin-top: -7rem;  
-        margin-bottom: 2rem;
-    }
+.container{
+    text-align: center;
 }
+.container h2{
+    background-color: var(--dark_blue);
+    color: var(--white);
+    width: 70%;
+    height: 10%;
+    text-align: center;
+    margin: 1rem 0 1rem 4rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    font-family: 'Social-gothic';
+}
+.infos_background{
+    background: linear-gradient(180deg, #1B7071 0%, #095D84 100%);
+    font-family: 'social-gothic';
+    color: var(--white);
+    font-size: 1.2rem;
+}
+.infos_background p{
+    font-family: 'Roboto';
+}
+
+.interacoes{
+    margin: 0 8rem -2rem 2.5em;
+}
+.interacoes button{
+    border: none;
+    border-radius: 0.5rem;
+    width: 90%;
+    height: 2rem;
+    color: var(--dark_blue);
+    font-family: 'Social-Gothic';
+    margin-left: 3rem;
+    margin-top: 1rem;  
+    margin-bottom: 2rem;
+}
+
+.interacoes img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 1rem;
+    /*NÃO RETIRAR*/
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
+    margin-bottom: 2rem;
+    margin-left: 2em;
+
+}
+
+
 
 /*TABLET*/
 @media screen and (min-width:768px) {
@@ -47,37 +59,42 @@
         text-align: center;
         width: 100%;
     }
-    #infos_background{
+    .container h2{
+        margin-left: 8rem;
+    }
+    .infos_background{
         background: linear-gradient(180deg, #1B7071 0%, #095D84 100%);
-        font-family: 'Roboto';
+        font-family: 'social-gothic';
         color: var(--white);
         font-size: 1.3rem;
+    }
+    .infos_background p{
+        font-family: 'Roboto';
     }
     .interacoes{
         margin: 0 8rem -2rem 8rem;
     }
-    #phrase{
-        font-family: 'Roboto';
-    }
-    #img {
-        position: relative;
-        width: 32rem;
+    .interacoes button{
         border: none;
         border-radius: 1rem;
-        /*NÃO RETIRAR*/
-        -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
-        margin-bottom: 2rem;
-    }
-    #button_inscreva{
-        border: none;
-        border-radius: 1rem;
-        width: 12rem;
-        height: 2.5rem;
+        width: 100%;
+        height: 3rem;
         color: var(--dark_blue);
         font-family: 'Social-Gothic';
-        margin-top: -7rem;  
-        margin-bottom: 2rem;
+        margin-top: 1rem;  
+        font-size: 1.3rem;
+        margin-left: 1rem;
     }
+    .interacoes img {
+        position: block;
+        width: 100%;
+        border: none;
+        border-radius: 1rem;
+        -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+    }
+   
 }
 /*NOTEBOOK*/
 @media screen and (min-width:1024px) {
@@ -85,19 +102,35 @@
         text-align: center;
         width: 100%;
     }
-    #infos_background{
+    .container h2{
+        margin-left: 15rem;
+    }
+    .infos_background{
         background: linear-gradient(180deg, #1B7071 0%, #095D84 100%);
-        font-family: 'Roboto';
+        font-family: 'social-gothic';
         color: var(--white);
         font-size: 1.3rem;
+    }
+    .infos_background p{
+        font-family: 'Roboto';
     }
     .interacoes{
         display: flex;
         justify-content: space-around;
         margin: 0 11rem 0 17rem;
     }
+    .interacoes button{
+            border: none;
+            border-radius: 1rem;
+            width: 20rem;
+            height: 3.5rem;
+            color: var(--dark_blue);
+            font-family: 'Social-Gothic';
+            margin-top: 7rem;  
+            font-size: 1.2em;
 
-    #img {
+        }
+    .interacoes img {
         position: relative;
         width: 32rem;
         border: none;
@@ -108,24 +141,12 @@
 
     }
 
-    #button_inscreva{
-        border: none;
-        border-radius: 1rem;
-        width: 20rem;
-        height: 3.5rem;
-        color: var(--dark_blue);
-        font-family: 'Social-Gothic';
-        margin-top: 7rem;  
-        font-size: 1.2em;
-
-    }
-    #button_inscreva:hover{
+   
+    .interacoes button:hover{
         background-color: var(--yellow);
         color: var(--white);
         transition: 0.5s;
         cursor: pointer;
     }
-    #phrase{
-        font-family: 'Roboto';
-    }
+    
 }
