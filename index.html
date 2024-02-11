@@ -24,7 +24,7 @@
 <body class="light">
     <header id="home">
         <nav class="nav" id="navbar">
-            <img src="./img/projeto.png" alt="logo Projeto" class="logo-img">
+            <a href="#home"><img src="./img/projeto.png" alt="logo Projeto" class="logo-img"></a>
             <button type="button" class="hamburger-button" onclick="toogleNavbar()">
                 <span class="material-symbols-outlined ">
                     menu
@@ -37,8 +37,8 @@
                     </span>
                 </button>
                 <ul>
-                    <li><a class="active" href="#home" onclick="navigateTo(0)">Home</a></li>
-                    <li><a href="#section_objetivos" onclick="navigateTo(1)">Sobre Nós</a></li>
+                    <li><a class="active" href="#sobre-nos" onclick="navigateTo(0)">Sobre Nós</a></li>
+                    <li><a href="#projetos" onclick="navigateTo(1)">Projetos</a></li>
                     <li><a href="#section_local" onclick="navigateTo(2)">Onde Estamos?</a></li>
                     <li><a href="#section_participe" onclick="navigateTo(3)">Participe</a></li>
                 </ul>
@@ -121,7 +121,7 @@
 
     </div>
     <!--OBJETIVOS-->
-    <section id="section_objetivos">
+    <section id="sobre-nos">
         <div class="objetivos">
             <div class="text_objetivos">
                 <h2>Sobre Nós</h2>
@@ -187,7 +187,7 @@
         </div>
     </section>
     <!--PROJETOS-->
-    <div class="projetos">
+    <div class="projetos" id="projetos">
         <h2>Conheça alguns dos projetos</h2>
         <div class="project-cards">
             <div class="popup">
