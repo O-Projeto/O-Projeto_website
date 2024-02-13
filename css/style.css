@@ -43,7 +43,7 @@ html {
 }
 
 body {
-    
+    background-color: var(--color-secondary);
     margin: 0px;
     overflow-x: hidden;
 }

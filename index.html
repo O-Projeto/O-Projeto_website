@@ -37,8 +37,8 @@
                     </span>
                 </button>
                 <ul>
-                    <li><a class="active" href="#home" onclick="navigateTo(0)">Home</a></li>
-                    <li><a href="#section_objetivos" onclick="navigateTo(1)">Sobre Nós</a></li>
+                    <li><a class="active" href="#sobre-nos" onclick="navigateTo(0)">Sobre Nós</a></li>
+                    <li><a href="#projetos" onclick="navigateTo(1)">Projetos</a></li>
                     <li><a href="#section_local" onclick="navigateTo(2)">Onde Estamos?</a></li>
                     <li><a href="#section_participe" onclick="navigateTo(3)">Participe</a></li>
                 </ul>
@@ -187,39 +187,39 @@
         </div>
     </section>
     <!--PROJETOS-->
-    <div class="projetos">
-        <h2>Conheça alguns dos projetos</h2>
-        <div class="project-cards">
-            <div class="popup">
-                <img src="./img/projetos/fred.png" alt="img fred">
-                <div class="text_popup">
-                    <h2>FRED</h2>
-                    <p>O Fred é um robo móvel que usa diversos sensores para se localizar e navegar até objetos, e claro
-                        sempre na velocidade.</p>
-                    <li>1º Lugar no Trekking Indoor - Copa Pinhão 2023</li>
-                </div>
+    <div class="projetos" id="projetos">
+        <h2>Projetos</h2>
+        <div class="projeto">
+            <div class="projetos-card" style="background-image: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('./img/projetos/fred.png');" onclick="window.location.href='./projetos/projeto-fred.html'" >
+                <h3>Frederico, El Cazador</h3>
+                <a href="https://github.com/AMR-Frederico"><img src="./img/github.png" alt=""></a>
             </div>
-            <div class="popup">
-                <img src="./img/projetos/b1b-k.jpeg" alt="img" >
-                <div class="text_popup">
-                    <!--<a href="#" id="close">X</a>-->
-                    <h2>B1B-K</h2>
-                    <p>"Bibica" é um robô de categoria Luta mini sumô autonomô. B1b-k consegue se localizar a partir de
-                        sensores em sua base e empurrar o adversário para fora do campo. </p>
-                </div>
-            </div>
-            <div class="popup">
-                <img src="./img/projetos/mrsmime.jpg" alt="img fred">
-                <div class="text_popup">
-                    <!--<a href="#" id="close">X</a>-->
-                    <h2>MRS. MIME</h2>
-                    <p>Robô de categoria 'ArtBot'. Mrs.Mime tem o poder de replicar gestos de mãos feitos por ser
-                        humanos.</p>
-                    <li>2º Lugar ArtBot - Copa Pinhão 2023</li>
-                    <!--<img src="#" alt="dono1">-->
-                </div>
+            <div class="projetos-card" style="background-image: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('./img/projetos/beta.png');">
+                <h3>Beta</h3>
+                <a href="#"><img src="./img/github.png" alt=""></a>
 
             </div>
+            <div class="projetos-card" style="background-image: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('./img/projetos/bibica.jpg');">
+                <h3>B1b-k</h3>
+                <a href="#"><img src="./img/github.png" alt=""></a>
+            </div>
+            <div class="projetos-card" style="background-image: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('./img/projetos/mrsmime.jpg');">
+                <h3>Mr. Mime</h3>
+                <a href="#"><img src="./img/github.png" alt=""></a>
+            </div>
+            <div class="projetos-card" style="background-image: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('./img/projetos/galahad.JPG');">
+                <h3>Galahad</h3>
+                <a href="#"><img src="./img/github.png" alt=""></a>
+            </div>
+            <div class="projetos-card" style="background-image: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('./img/projetos/ozzy.JPG');">
+                <h3>Ozzy Osbone</h3>
+                <a href="#"><img src="./img/github.png" alt=""></a>
+            </div>
+            <div class="projetos-card" style="background-image: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('./img/projetos/scorro+barao.jpg');">
+                <h3>Socorro + Barão</h3>
+                <a href="#"><img src="./img/github.png" alt=""></a>
+            </div>
+            
         </div>
     </div>
     <!--LOCALIZAÇÃO-->
@@ -264,8 +264,6 @@
         <button type="button" id="patrocinio_button">Clique Aqui</button>  
         
     </div>
-    
- 
     <!--RODAPE-->
     <footer>
         <div class="container1">
