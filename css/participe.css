@@ -5,10 +5,9 @@
 .container h2{
     background-color: var(--dark_blue);
     color: var(--white);
-    width: 70%;
-    height: 10%;
+    width: 90%;
     text-align: center;
-    margin: 1rem 0 1rem 4rem;
+    margin: 1rem ;
     border-radius: 0.3rem;
     font-size: 1.5rem;
     font-family: 'Social-gothic';
@@ -60,7 +59,7 @@
         width: 100%;
     }
     .container h2{
-        margin-left: 8rem;
+        width: 95%;
     }
     .infos_background{
         background: linear-gradient(180deg, #1B7071 0%, #095D84 100%);
@@ -103,7 +102,7 @@
         width: 100%;
     }
     .container h2{
-        margin-left: 15rem;
+        width: 98%;
     }
     .infos_background{
         background: linear-gradient(180deg, #1B7071 0%, #095D84 100%);
