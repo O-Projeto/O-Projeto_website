@@ -1,0 +1,38 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--grey);
+}
+a{
+    text-decoration: none;
+}
+nav a img{
+    padding: 1rem;
+    width: 5rem;
+}
+nav img{
+    padding: 1rem;
+    width: 5rem;
+    border-radius: 25rem;
+}
+nav a h2{
+    font-family: 'social-gothic';
+    color: var(--white);
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: var(--grey);
+}
+.banner{
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/Beta/beta.png');
+    margin-top: 10rem;
+    scroll-behavior: smooth;
+
+}
