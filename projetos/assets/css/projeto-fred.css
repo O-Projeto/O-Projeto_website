@@ -27,12 +27,11 @@ nav a h2{
     height: 20rem;
     background-size: cover;
     background-position: center;
-    background-image: url('../img/fred.png');
+    background-image: url('../img/fred/fred.png');
     margin-top: 10rem;
     scroll-behavior: smooth;
 
 }
-
 .fred{
     display: block;
     text-align: center;
