@@ -12,14 +12,11 @@
 .localizacao h2{
     background-color: var(--dark_blue);
     color: var(--white);
-    width: 70%;
-    height: 10%;
+    width: 90%;
     text-align: center;
-    border-radius: 0.3rem;
-    font-size: 1.5rem;
+    border-radius: 0.5rem;
     font-family: 'Social-gothic';
-    margin: 1rem 0 1rem 4rem;
-    padding: 0.5rem;
+    margin: 1.5rem;
 
 }
 .localizacao p{
@@ -45,7 +42,6 @@
     
 }
 iframe{
-    height: 100%;
     width: 90%;
     border: none;
     border-radius: 1rem;
@@ -76,10 +72,7 @@ iframe{
         width: 100%;
     }
     .localizacao h2{
-        width: 90%;
-        font-size: 1.7rem;
-        margin-left: 2rem;
-        
+        width: 95%; 
 
     }
     .localizacao p{
@@ -104,7 +97,6 @@ iframe{
         
     }
     iframe{
-        height: 100%;
         width: 90%;
         border: none;
         border-radius: 1rem;
@@ -127,11 +119,6 @@ iframe{
         text-align: center;
         margin-top: 2rem;
     }
-    .localizacao h2{
-        font-size: 2rem;
-        padding: 0.5rem;
-        margin-left: 5rem;
-    }
     .localizacao p{
         font-size: 1.5rem;
     }
@@ -143,7 +130,7 @@ iframe{
         width: 25rem;
         border: 6px solid white;
         border-radius: 1rem;
-        margin-right: 35rem;
+        margin-right: 30rem;
        
     }
     .infos{
@@ -154,15 +141,14 @@ iframe{
         
     }
     iframe{
-        width: 70%;
+        width: 90%;
         border: none;
         border-radius: 1rem;
         margin-top: 8rem;
-        height: 20rem;
     }
     .infos p{
         font-family: 'Roboto';
-        margin-left: 10rem;
+        margin-left: 1rem;
         margin-top: 1rem
     }
 }

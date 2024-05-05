@@ -33,7 +33,7 @@
 }
 swiper-container{
     --swiper-pagination-color: var(--red);
-    --swiper-pagination-size: 3rem;
+    --swiper-pagination-size: 2rem;
     --swiper-pagination-top: auto;
 }
 swiper-slide{
@@ -48,19 +48,20 @@ swiper-slide{
     background-color: var(--yellow);
     font-family: "Roboto";
     text-align: center;
-    width: 10rem;
-    height: 18em;
+    width: 11.5rem;
+    height: 22em;
 }
 .comunidade img{
-    width: 2.5rem;
+    width: 3rem;
     align-items: center;
-    margin: 5px;
 }
 .comunidade p{
     justify-content: center;
+    padding:1rem;
 }
 #gothic{
     font-family: 'Social-Gothic';
+    color: var(--black);
 }
 
 
@@ -77,14 +78,10 @@ swiper-slide{
         width: 15rem;
         height: 17rem;
         border-radius: 1rem;
-        background-color: var(--yellow);
-        font-family: "Roboto";
-        text-align: center;
     }
     .comunidade img{
-        width: 5rem;
+        width: 3.5rem;
         align-items: center;
-        padding: 1rem;
     }
     .comunida p{
         width: 10rem;
@@ -126,13 +123,9 @@ swiper-slide{
     .comunidade{
         width: 18rem;
         height: 17rem;
-        border-radius: 1rem;
-        background-color: var(--yellow);
     }
     .comunidade img{
-        width: 5rem;
-        align-items: center;
-        margin-left: 2rem;
+        width: 5.9rem;
         padding: 1rem;
     }
     .comunidade p{

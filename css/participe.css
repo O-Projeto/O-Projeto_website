@@ -5,12 +5,10 @@
 .container h2{
     background-color: var(--dark_blue);
     color: var(--white);
-    width: 70%;
-    height: 10%;
+    width: 90%;
     text-align: center;
-    margin: 1rem 0 1rem 4rem;
-    border-radius: 0.3rem;
-    font-size: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
     font-family: 'Social-gothic';
 }
 .infos_background{
@@ -40,14 +38,11 @@
 
 .interacoes img {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 22rem;
     border: none;
     border-radius: 1rem;
     /*NÃO RETIRAR*/
     -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
-    margin-bottom: 2rem;
-    margin-left: 2em;
 
 }
 
@@ -60,7 +55,7 @@
         width: 100%;
     }
     .container h2{
-        margin-left: 8rem;
+        width: 95%;
     }
     .infos_background{
         background: linear-gradient(180deg, #1B7071 0%, #095D84 100%);
@@ -77,22 +72,20 @@
     .interacoes button{
         border: none;
         border-radius: 1rem;
-        width: 100%;
-        height: 3rem;
+        height: 2.5rem;
         color: var(--dark_blue);
         font-family: 'Social-Gothic';
         margin-top: 1rem;  
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-left: 1rem;
     }
     .interacoes img {
         position: block;
-        width: 100%;
+        width: 35rem;
         border: none;
         border-radius: 1rem;
         -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
         margin-bottom: 2rem;
-        margin-left: 1rem;
     }
    
 }
@@ -103,7 +96,7 @@
         width: 100%;
     }
     .container h2{
-        margin-left: 15rem;
+        width: 95%;
     }
     .infos_background{
         background: linear-gradient(180deg, #1B7071 0%, #095D84 100%);
@@ -117,19 +110,18 @@
     .interacoes{
         display: flex;
         justify-content: space-around;
-        margin: 0 11rem 0 17rem;
+        margin: 1rem 11rem 0 10rem;
     }
     .interacoes button{
-            border: none;
-            border-radius: 1rem;
-            width: 20rem;
-            height: 3.5rem;
-            color: var(--dark_blue);
-            font-family: 'Social-Gothic';
-            margin-top: 7rem;  
-            font-size: 1.2em;
+        border: none;
+        border-radius: 1rem;
+        width: 18rem;
+        color: var(--dark_blue);
+        font-family: 'Social-Gothic';
+        margin-top: 7rem;  
+        font-size: 1.2em;
 
-        }
+    }
     .interacoes img {
         position: relative;
         width: 32rem;
@@ -138,6 +130,7 @@
         /*NÃO RETIRAR*/
         -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
         margin-bottom: 2rem;
+        margin-left: 5rem;
 
     }
 

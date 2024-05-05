@@ -21,7 +21,10 @@
 .text p{
     font-family: "roboto";
     color: var(--white);
-
+}
+.text p .gothic{
+    color: var(--white);
+    font-family: "social-gothic";
 }
 
 #text_banner_down {
