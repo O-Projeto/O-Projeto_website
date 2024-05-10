@@ -2,6 +2,7 @@
     width: 100%;
     margin-top: 6rem;
     scroll-margin-top: 0;
+
 }
 
 .banner img {
@@ -21,6 +22,7 @@
 .text p{
     font-family: "roboto";
     color: var(--white);
+    
 }
 .text p .gothic{
     color: var(--white);

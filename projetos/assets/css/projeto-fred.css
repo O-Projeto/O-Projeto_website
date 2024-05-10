@@ -43,13 +43,16 @@ nav a h2{
     margin-top: 0.5rem;
 }
 .text-fred p{
-    color: var(--black);
+    color: var(--white);
     font-family: 'roboto';
 }
 .competicoes{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
-.competicoes h2{
+.title_comp{
     background-color: var(--light_blue);
     color: var(--white);
     width: 90%;
@@ -57,18 +60,22 @@ nav a h2{
     margin: 1.5rem;
     border-radius: 0.5rem;
     font-size: 1.7rem;
+
 }
 .competicoes h3{
     color: var(--white);
     font-size: 1.7rem;
+
 }
 .competicoes li{
     font-family: 'roboto';
     margin-top: 2rem;
     color: var(--white);
+
 }
 .competicoes img{
-    width: 8rem;
+    width: 5rem;
+
 }
 .colab-nome{
     color: var(--white);
@@ -139,16 +146,14 @@ nav a h2{
     .banner{
         height: 35rem;
     }
-    .competicoes h2{
-        width: 95%;
+    .competicoes{
+        flex-direction: column;
+        justify-content: center;
     }
-    .colab-nome{
-        width: 95%;
-    }
-    .ling-nome{
-        width: 95%;        
-    }
-    .nome-galeria{
+    .competicoes h3, .competicoes img, .competicoes li{
+        width: 15%;
+    } 
+    .title_comp, .colab-nome, .ling-nome, .nome-galeria{
         width: 95%;
     }
    
@@ -157,5 +162,10 @@ nav a h2{
     .banner{
         height: 70rem;
     }
+    .title_comp{
+        width: 95%;
+    }
+   
+
     
 }

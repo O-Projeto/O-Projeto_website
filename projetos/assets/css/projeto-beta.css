@@ -44,7 +44,7 @@ nav a h2{
     margin-top: 0.5rem;
 }
 .text-beta p{
-    color: var(--black);
+    color: var(--white);
     font-family: 'roboto';
 }
 .photos{

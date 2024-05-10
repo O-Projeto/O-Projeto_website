@@ -8,7 +8,7 @@
 .menu{
     display: flex;
     justify-content: space-around;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 .menu a{
     text-decoration: none;
@@ -31,6 +31,11 @@
     margin-bottom: 1rem;
 }
 
+.container1 img:hover{
+    border-radius: 30%;
+    border: none;
+    background-color: var(--green);
+}
 
 /*TABLET OK*/
 @media screen and (min-width:768px) {
@@ -43,7 +48,7 @@
         margin-top: 2rem;
     }
     .menu a:hover{
-        color:var(--yellow);
+        color:var(--green);
         transition: 0.5s;
     }
 
@@ -67,10 +72,11 @@
     }
    
     .container1 img{
-        width: 3.5rem;
+        width: 3rem;
         margin-left: 2rem;
         padding: 0.5rem;
     }
+    
 
     
 }
