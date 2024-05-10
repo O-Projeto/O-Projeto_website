@@ -142,6 +142,9 @@ iframe{
         
         
     }
+    .infos h3{
+        margin-left: 5rem;
+    }
     iframe{
         width: 90%;
         border: none;
@@ -151,7 +154,7 @@ iframe{
     .infos p{
         font-family: 'Roboto';
 
-        margin-left: 1rem;
+        margin-left: 15rem;
         margin-top: 1rem
 
     }
