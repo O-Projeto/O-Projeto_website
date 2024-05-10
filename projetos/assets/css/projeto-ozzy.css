@@ -27,22 +27,22 @@ nav a h2{
     height: 20rem;
     background-size: cover;
     background-position: center;
-    background-image: url('../img/mr.mime/mrsmime.jpg');
+    background-image: url('../img/ozzy/ozzypost.png');
     margin-top: 10rem;
     scroll-behavior: smooth;
 
 }
-.mrmime{
+.ozzy{
     display: block;
     text-align: center;
 }
-.text-mrmime{
+.text-ozzy{
     background: linear-gradient(var(--light_blue), var(--dark_blue));
     color: var(--white);
     padding: 1.5rem;
     margin-top: 0.5rem;
 }
-.text-mrmime p{
+.text-ozzy p{
     font-family: 'roboto';
 }
 .competicoes{

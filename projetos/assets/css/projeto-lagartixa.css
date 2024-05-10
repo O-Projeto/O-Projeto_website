@@ -1,0 +1,160 @@
+nav{
+    display: block;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--grey);
+}
+a{
+    text-decoration: none;
+}
+nav a img{
+    padding: 1rem;
+    width: 5rem;
+}
+nav a h2{
+    font-family: 'social-gothic';
+    color: var(--white);
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: var(--grey);
+    margin-top: -5.5rem;
+}
+.banner{
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/lagartixa/Lagartiixa_post.png');
+    margin-top: 10rem;
+    scroll-behavior: smooth;
+
+}
+.lagartixa{
+    display: block;
+    text-align: center;
+}
+.text-lagartixa{
+    background: linear-gradient(var(--light_blue), var(--dark_blue));
+    color: var(--white);
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+}
+.text-lagartixa p{
+    font-family: 'roboto';
+}
+.competicoes{
+    display: block;
+}
+.competicoes h2{
+    background-color: var(--light_blue);
+    color: var(--white);
+    width: 90%;
+    text-align: center;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+}
+.competicoes h3{
+    color: var(--white);
+    font-size: 1.7rem;
+}
+.competicoes li{
+    font-family: 'roboto';
+    margin-top: 2rem;
+    color: var(--white);
+}
+.competicoes img{
+    width: 8rem;
+}
+.colab-nome{
+    color: var(--white);
+    background-color: var(--yellow);
+    width: 90%;
+    align-items: center;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+}
+.colaboracao{
+    display: flex;
+    background:linear-gradient( var(--grey), var(--yellow));
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    --swiper-pagination-color: var(--dark_blue);
+}
+.colaborador h3, p{
+    color: var(--white);
+}
+.colaborador img{
+    width: 8rem;
+    border-radius: 2rem;
+}
+.ling-nome{
+    color: var(--white);
+    background-color: var(--dark_blue);
+    width: 90%;
+    align-items: center;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.linguagens img{
+    display: inline-block;
+    margin: 2rem;
+    width: 5rem;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Layout responsivo com tamanho mínimo e máximo para as colunas */
+    grid-auto-rows: minmax(150px, auto); /* Altura automática com mínimo e máximo */
+    grid-gap: 10px;
+    position: relative;
+    background-color: var(--grey);
+
+}
+.nome-galeria{
+    color: var(--black);
+    background-color: var(--white);
+    width: 90%;
+    align-items: center;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+}
+.galeria img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1.5rem;
+}
+
+.galeria img:hover {
+    transform: scale(1.1); /* Efeito de zoom na imagem ao passar o mouse */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+@media screen and (min-width:768px) {
+    .banner{
+        height: 35rem;
+    }
+    .competicoes h2{
+        width: 95%;
+    }
+    .colab-nome{
+        width: 95%;
+    }
+    .ling-nome{
+        width: 95%;        
+    }
+    .nome-galeria{
+        width: 95%;
+    }
+   
+}
+@media screen and (min-width:1024px) {
+    .banner{
+        height: 70rem;
+    }
+    
+}
