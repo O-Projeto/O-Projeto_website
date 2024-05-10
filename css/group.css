@@ -2,16 +2,16 @@
     text-align: center;
 }
 .people h2{
-    width: 100%;
     font-size: 1.2rem;
+    padding: 1rem;
 }
 swiper-container{
-    --swiper-navigation-size: 3rem;
+    --swiper-navigation-size:2rem;
     --swiper-navigation-color: var(--dark_blue);
     
 }
 swiper-slide{
-    margin-left: 2.5rem;
+    margin-left: 2rem;
     
 }
 .person {
@@ -20,7 +20,7 @@ swiper-slide{
     background-image: linear-gradient(#1D736F, #042E41);
     color: var(--white);
     margin-left: 5rem;
-    width: 8.5em;
+    width: 10.5rem;
     height: 15em;
 }
 .person h3{
@@ -35,13 +35,13 @@ swiper-slide{
 }
 
 .person img {
-    max-width: 100%;
-    height: auto;
+    width: 50%;
 }
 .person p {
     font-size: 14px;
     color: var(--yellow);
     font-family: 'Social-Gothic';
+    padding: 0.5rem;
 }
 
 /*TABLET*/
@@ -50,10 +50,8 @@ swiper-slide{
         text-align: center; 
     }
     .people h2{
-        margin-right: 2rem;
         font-size: 2rem;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
+        padding: 2rem;
     }
     .person {
         text-align: center;
@@ -62,13 +60,13 @@ swiper-slide{
         background-image: linear-gradient(#1D736F, #042E41);
         color: var(--white);
         height: 18em;
-        width: 12em;
+        width: 15em;
     
     }
     .person h3{
         font-family: "Social-Gothic";
         padding: 1rem;
-        font-size: 18px;
+        font-size: 20px;
     }
     .person img{
         width: 8rem;
@@ -76,7 +74,7 @@ swiper-slide{
         height: auto;
     }
     .person p {
-        font-size: 14px;
+        font-size: 18px;
         color: var(--yellow);
         font-family: 'Social-Gothic';
 

@@ -1,0 +1,35 @@
+:root {
+    --z-index-menubar: 500;
+
+    --red: #d30f0f;
+    --yellow: #ffba08;
+    --dark_blue: #04588c;
+    --light_blue: #4a8fc8;
+    --green: #21776c;
+    --black: #101010;
+    --grey: #1b1b1b;
+    --light_grey: #dbdbdb;
+    --white: #f6f6f6;
+}
+@font-face {
+    font-family: "roboto";
+    font-weight: 800;
+    font-style: normal;
+    src: url("https://use.typekit.net/iji5bxg.css");
+}
+
+@font-face {
+    font-family: "social-gothic";
+    font-weight: 700;
+    src: url("../Font/Social Gothic Stencil.otf") format('opentype');
+}
+html{
+    font-family: 'social-gothic', sans-serif;
+    font-style: normal;
+    scroll-behavior: smooth;
+    background-color: var(--grey);
+}
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}

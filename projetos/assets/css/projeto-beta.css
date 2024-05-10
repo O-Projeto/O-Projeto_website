@@ -1,0 +1,146 @@
+nav{
+    display: block;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--grey);
+}
+a{
+    text-decoration: none;
+}
+nav a img{
+    padding: 1rem;
+    width: 5rem;
+}
+nav a h2{
+    font-family: 'social-gothic';
+    color: var(--white);
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: var(--grey);
+    margin-top: -5.5rem;
+
+}
+.banner{
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/Beta/beta.png');
+    margin-top: 10rem;
+    scroll-behavior: smooth;
+
+}
+.beta{
+    display: block;
+    text-align: center;
+}
+.text-beta{
+    background-color: var(--dark_blue) ;
+    color: var(--white);
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+}
+.text-beta p{
+    color: var(--white);
+    font-family: 'roboto';
+}
+.photos{
+    display: block;
+    text-align: center;
+}
+.photos h2{
+    color: var(--white);
+    background-color: var(--light_blue);
+    width: 90%;
+    align-items: center;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+}
+.colab{
+    display: block;
+}
+.colab h2{
+    color: var(--white);
+    background-color: var(--yellow);
+    width: 90%;
+    align-items: center;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+}
+.colab img{
+    width: 8rem;
+    border-radius: 2rem;
+}
+.colab p{
+    color: var(--white);
+}
+.ling-nome{
+    color: var(--white);
+    background-color: var(--dark_blue);
+    width: 90%;
+    align-items: center;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.linguagens img{
+    display: inline-block;
+    margin: 2rem;
+    width: 5rem;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Layout responsivo com tamanho mínimo e máximo para as colunas */
+    grid-auto-rows: minmax(150px, auto); /* Altura automática com mínimo e máximo */
+    grid-gap: 10px;
+    position: relative;
+    background-color: var(--grey);
+
+}
+.nome-galeria{
+    color: var(--black);
+    background-color: var(--white);
+    width: 90%;
+    align-items: center;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+}
+.galeria img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1.5rem;
+}
+
+.galeria img:hover {
+    transform: scale(1.1); /* Efeito de zoom na imagem ao passar o mouse */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+@media screen and (min-width:768px) {
+    .banner{
+        height: 35rem;
+    }
+    .competicoes h2{
+        width: 95%;
+    }
+    .colab-nome{
+        width: 95%;
+    }
+    .ling-nome{
+        width: 95%;        
+    }
+    .nome-galeria{
+        width: 95%;
+    }
+   
+}
+@media screen and (min-width:1024px) {
+    .banner{
+        height: 70rem;
+    }
+    
+}
