@@ -46,6 +46,7 @@
     }
     .menu a{
         margin-top: 2rem;
+        transition: 0.5s;
     }
     .menu a:hover{
         color:var(--green);
