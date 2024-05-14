@@ -22,6 +22,13 @@ function toggleTheme() {
     }
 })();
 // #endregion
+// #region Abrir em outra guia
+
+function openInNewTab(url) {
+    window.open(url, '_blank');
+}
+
+// #endregion
 
 // #region Menubar
 function toogleNavbar() {
