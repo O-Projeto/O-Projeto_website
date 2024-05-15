@@ -1,5 +1,5 @@
 :root {
-    --z-index-menubar: 500;
+    --z-index-menubar: 100;
 
     --red: #d30f0f;
     --yellow: #ffba08;
@@ -10,6 +10,38 @@
     --grey: #1b1b1b;
     --light_grey: #dbdbdb;
     --white: #f6f6f6;
+}
+
+.preloader {
+    background: var(--grey);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloader::after {
+    content: "";
+    width: 7em;
+    height: 7em;
+    border: 15px solid #dbdbdb;
+    border-top-color: var(--green);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {transform: rotate(0turn);}
+    to {transform: rotate(1turn);}
 }
 
 .theme-light {

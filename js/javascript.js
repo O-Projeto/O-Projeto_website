@@ -1,3 +1,26 @@
+// #region Preloader
+
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".preloader");
+    loader.classList.add("hidden");
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+    });
+});
+
+window.addEventListener("load", () => {
+    console.log("Page loaded");
+    const loader = document.querySelector(".preloader");
+    console.log("Preloader found:", loader);
+    loader.classList.add("hidden");
+    loader.addEventListener("transitionend", () => {
+        console.log("Transition ended");
+        document.body.removeChild(loader);
+    });
+});
+  
+// #endregion
+
 // #region Theme Switcher
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
