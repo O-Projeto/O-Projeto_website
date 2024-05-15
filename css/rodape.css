@@ -16,25 +16,35 @@
     display: block;
 }
 
-
-.container1 img{
+.container1 img {
     width: 2.5rem;
     border: none;
     margin-left: 2rem;
     padding: 0.5rem;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    transition: 0.25s;
+    border-radius: 30%;
 }
 
-.container1 p{
+.container1 p {
     color: #969696;
     margin-bottom: 1rem;
 }
 
-.container1 img:hover{
+.container1 img:hover {
+    width: 3.3rem;
     border-radius: 30%;
-    border: none;
-    background-color: var(--green);
+    transition: 0.25s;
+}
+
+.container1 a[href*="instagram"] img,
+.container1 a[href*="tiktok"] img,
+.container1 a[href*="linktr"] img,
+.container1 a[href*="linkedin"] img,
+.container1 a[href*="notion"] img,
+.container1 a[href*="github"] img {
+    background-color: #969696;
 }
 
 /*TABLET OK*/
