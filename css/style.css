@@ -80,7 +80,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: var(--grey);
+    background: #0a0a0a;
     border-radius: 5rem;
     border: none;
     width: 0.2px;
