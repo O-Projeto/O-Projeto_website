@@ -113,7 +113,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background: #0a0a0a;
-    border-radius: 5rem;
+    /* border-radius: 5rem; */
     border: none;
     width: 0.2px;
 }

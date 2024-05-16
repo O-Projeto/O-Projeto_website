@@ -6,8 +6,8 @@
     padding: 1rem;
 }
 swiper-container{
-    --swiper-navigation-size:2rem;
-    --swiper-navigation-color: var(--dark_blue);
+    --swiper-navigation-size: 2rem;
+    --swiper-navigation-color: var(--yellow);
     
 }
 swiper-slide{

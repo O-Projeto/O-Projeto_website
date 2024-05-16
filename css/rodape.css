@@ -3,7 +3,6 @@
     text-align: center;
     height: 9rem;
     display: block;
-
 }
 .menu{
     display: flex;
@@ -25,6 +24,7 @@
     margin-bottom: 1rem;
     transition: 0.25s;
     border-radius: 30%;
+    background-color: #969696;
 }
 
 .container1 p {
@@ -35,15 +35,8 @@
 .container1 img:hover {
     width: 3.3rem;
     border-radius: 30%;
+    letter-spacing: 0.5em;
     transition: 0.25s;
-}
-
-.container1 a[href*="instagram"] img,
-.container1 a[href*="tiktok"] img,
-.container1 a[href*="linktr"] img,
-.container1 a[href*="linkedin"] img,
-.container1 a[href*="notion"] img,
-.container1 a[href*="github"] img {
     background-color: #969696;
 }
 
