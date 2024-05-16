@@ -11,7 +11,7 @@
 .text_objetivos h2{
     font-family: "Social-Gothic";
     border: none;
-    background-color: var(--yellow);
+    background-color: #ffb90873;
     width: 100%;
     border-radius: 0.5rem;
     font-size: 1.7rem;
@@ -19,8 +19,15 @@
     padding: 0.2rem;
 }
 .text_objetivos p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 100%;
+    background: var(--yellow);
+    color: var(--black);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
 }
 .text_objetivos h3{
     font-family: "Social-Gothic";
@@ -58,6 +65,7 @@ swiper-slide{
 .comunidade p{
     justify-content: center;
     padding:1rem;
+    color: var(--black);
 }
 #gothic{
     font-family: 'Social-Gothic';
