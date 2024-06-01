@@ -1,85 +1,119 @@
 /*CELULAR*/
-.localizacao{
-    background-image: url(../img/background.png);
+.localizacao {
+    position: relative;
     font-family: "roboto";
     color: var(--white);
-    text-align: center;
-    border:0;
+    border: 0;
     font-weight: 500;
+    background-image: url(../img/background.png);
     background-size: cover; 
-    background-position: center;
+    padding-top: 6rem; 
+    overflow: hidden; 
 }
-.localizacao h2{
-    background-color: var(--dark_blue);
-    color: var(--white);
-    width: 90%;
 
+.localizacao::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    filter: blur(0.4rem); 
+}
+
+.localizacao > * {
+    position: relative;
+    z-index: 1;
+}
+
+.localizacao h2{
+    position: absolute;
+    top: 1rem; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: var(--yellow);
+    color: black;
+    width: 90%;
     text-align: center;
     border-radius: 0.5rem;
     font-family: 'Social-gothic';
-    margin: 1.5rem;
-
-
+    margin: 0; 
 }
+
 .localizacao p{
     font-size: 1.2rem;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
 }
+
 #gothic_loc{
     font-family: 'Social-gothic';
     color: var(--yellow);
 }
+
 .localizacao img{
-    width: 22rem;
+    width: 30rem;
+    height: 20rem;
     border: 6px solid white;
     border-radius: 1rem;
     margin-right: 1rem;
     margin-top: 1rem;
+    z-index: 2;
 }
+
 .infos{
     font-family: 'Social-gothic';
     margin: 2rem 1rem 9rem 0;
     font-size: 1.2rem;
 }
+
 iframe{
     width: 90%;
     border: none;
     border-radius: 1rem;
     margin: -8rem 0 1rem 0;
 }
-.infos p{
+
+.infos p {
     font-family: 'Roboto';
-    background-color: rgba(16, 32, 77, 0.63);
+    background-color: var(--yellow);
+    position: relative;
+    right: 3%;
+    z-index: 0;
+    color: black;
     width: 20rem;
     border-radius: 1rem;
-    margin-left: 3rem;
-    margin-top: 1rem
+    margin-right: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
 }
-
-
 
 
 /*TABLET*/
 @media screen and (min-width:768px) {
     .localizacao{
+        position: relative;
         background-image: url(../img/background.png);
         font-family: "Roboto";
         color: var(--white);
         text-align: center;
         margin:0;
-        padding:0;
+        padding: 6rem 0 0 0;
         border:0;
         width: 100%;
     }
     .localizacao h2{
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
         width: 95%; 
-
-
     }
     .localizacao p{
         font-size: 1.5rem;
-        margin-right: 1rem;
     }
+
     #gothic_loc{
         font-family: 'Social-gothic';
         color: var(--yellow);
@@ -94,8 +128,6 @@ iframe{
         font-family: 'Social-gothic';
         margin: 2rem 1rem 10rem 0;
         font-size: 1.5rem;
-        
-        
     }
     iframe{
         width: 90%;
@@ -114,36 +146,47 @@ iframe{
 /*NOTEBOOK*/
 @media screen and (min-width:1024px) {
     .localizacao{
+        position: relative;
         background-image: url(../img/background.png);
         font-family: "Roboto";
         color: var(--white);
         text-align: center;
         margin-top: 2rem;
+        padding-top: 3rem;
     }
-
+    .localizacao h2{
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
     .localizacao p{
         font-size: 1.5rem;
+    }
+    .localizacao_subtitulo {
+        position: relative;
+        left: 23.5%;
+        top: 5.5rem;
     }
     #gothic_loc{
         font-family: 'Social-gothic';
         color: var(--yellow);
     }
     .localizacao img{
-        width: 25rem;
+        width: 30rem;
         border: 6px solid white;
         border-radius: 1rem;
-        margin-right: 30rem;
-       
+        margin-right: 35rem;
     }
     .infos{
         font-family: 'Social-gothic';
         margin: -15rem 0 0 25rem;
         font-size: 1.5rem;
-        
-        
     }
     .infos h3{
-        margin-left: 5rem;
+        margin-left: 4rem;
+        margin-bottom: 1.5rem;
     }
     iframe{
         width: 90%;
@@ -153,9 +196,7 @@ iframe{
     }
     .infos p{
         font-family: 'Roboto';
-
         margin-left: 15rem;
-        margin-top: 1rem
-
+        margin-top: 1rem;
     }
 }
