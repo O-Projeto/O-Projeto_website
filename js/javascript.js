@@ -45,6 +45,34 @@ function toggleTheme() {
     }
 })();
 // #endregion
+
+// #region Interatividade Nav e Footer
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('#navbar-content ul a');
+    const footerLinks = document.querySelectorAll('.menu a');
+
+    function removeActiveClasses() {
+        navLinks.forEach(link => link.classList.remove('active'));
+        footerLinks.forEach(link => link.classList.remove('active'));
+    }
+
+    function addActiveClass(hash) {
+        document.querySelectorAll(`a[href="${hash}"]`).forEach(link => link.classList.add('active'));
+    }
+
+    function handleLinkClick(event) {
+        const hash = event.currentTarget.getAttribute('href');
+        removeActiveClasses();
+        addActiveClass(hash);
+    }
+
+    navLinks.forEach(link => link.addEventListener('click', handleLinkClick));
+    footerLinks.forEach(link => link.addEventListener('click', handleLinkClick));
+});
+
+// #endregion
+
+
 // #region Abrir em outra guia
 
 function openInNewTab(url) {

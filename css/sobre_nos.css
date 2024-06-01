@@ -124,7 +124,7 @@ swiper-slide{
         font-size: 1.2rem;
     }
     swiper-container{
-        --swiper-pagination-color: var(--red);
+        --swiper-pagination-color: var(--yellow);
         --swiper-pagination-size: 8rem;
         --swiper-pagination-top: auto;
     }
