@@ -1,4 +1,4 @@
-.container1{
+.container_rodape{
     background-color: var(--grey);
     text-align: center;
     height: 9rem;
@@ -16,7 +16,7 @@
     margin: 0 3rem 0 3rem;
 }
 
-.container1 img {
+.container_rodape img {
     width: 2.5rem;
     border: none;
     margin-left: 2rem;
@@ -28,12 +28,12 @@
     background-color: #969696;
 }
 
-.container1 p {
+.container_rodape p {
     color: #969696;
     margin-bottom: 1rem;
 }
 
-.container1 img:hover {
+.container_rodape img:hover {
     width: 3.3rem;
     border-radius: 30%;
     letter-spacing: 0.5em;
@@ -43,7 +43,7 @@
 
 /*TABLET OK*/
 @media screen and (min-width:768px) {
-    .container1{
+    .container_rodape{
         background-color: var(--grey);
         text-align: center;
         height: 12rem;
@@ -57,7 +57,7 @@
         transition: 0.5s;
     }
 
-    .container1 img{
+    .container_rodape img{
         width: 3rem;
         border: none;
         margin-left: 2rem;
@@ -67,7 +67,7 @@
 }
 /*NOTEBOOK*/
 @media screen and (min-width: 1024px) {
-    .container1{
+    .container_rodape{
         background-color: var(--grey);
         text-align: center;
         font-size: 1.2rem;
@@ -76,7 +76,7 @@
         display: flex;
     }
    
-    .container1 img{
+    .container_rodape img{
         width: 3rem;
         margin-left: 2rem;
         padding: 0.5rem;

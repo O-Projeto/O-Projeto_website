@@ -33,7 +33,7 @@
     top: 1rem; 
     left: 50%; 
     transform: translateX(-50%); 
-    background-color: var(--yellow);
+    background-color: #ffb908e1;
     color: black;
     width: 90%;
     text-align: center;

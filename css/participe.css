@@ -1,8 +1,8 @@
 
-.container{
+.container_participe{
     /*  */
 }
-.container h2{
+.container_participe h2{
     background-color: var(--dark_blue);
     color: var(--white);
     width: 90%;
@@ -74,11 +74,11 @@
 
 /*TABLET*/
 @media screen and (min-width:768px) {
-    .container{
+    .container_participe{
         text-align: center;
         width: 100%;
     }
-    .container h2{
+    .container_participe h2{
         width: 95%;
     }
     .infos_background{
@@ -115,11 +115,11 @@
 }
 /*NOTEBOOK*/
 @media screen and (min-width:1024px) {
-    .container{
+    .container_participe{
         text-align: center;
         width: 100%;
     }
-    .container h2{
+    .container_participe h2{
 
         width: 95%;
 
