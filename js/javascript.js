@@ -146,6 +146,106 @@ document.addEventListener('DOMContentLoaded', _ => {
 */
 // #endregion
 
+// #region Menu Patrocinios
+
+const OptionElements = document.querySelectorAll(".option");
+const CreativityLogo = document.querySelector(".creativity_logo");
+const DumontLogo = document.querySelector(".dumont_logo");
+const RyndackLogo = document.querySelector(".ryndack_logo");
+const PatrocinadorT1 = document.querySelector(".patrocinador_titulo_1");
+const PatrocinadorT2 = document.querySelector(".patrocinador_titulo_2");
+const PatrocinadorT3 = document.querySelector(".patrocinador_titulo_3");
+const PatrocinadorD1 = document.querySelector(".patrocinador_descricao_1");
+const PatrocinadorD2 = document.querySelector(".patrocinador_descricao_2");
+const PatrocinadorD3 = document.querySelector(".patrocinador_descricao_3");
+
+function showCreativity(){
+    addActive(CreativityLogo);
+    addActive(PatrocinadorT1);
+    addActive(PatrocinadorD1);
+
+    removeActive(DumontLogo);
+    removeActive(PatrocinadorT2);
+    removeActive(PatrocinadorD2);
+    removeActive(RyndackLogo);
+    removeActive(PatrocinadorT3);
+    removeActive(PatrocinadorD3);
+}
+
+function showDumont(){
+    addActive(DumontLogo);
+    addActive(PatrocinadorT2);
+    addActive(PatrocinadorD2);
+
+    removeActive(CreativityLogo);
+    removeActive(PatrocinadorT1);
+    removeActive(PatrocinadorD1);
+    removeActive(RyndackLogo);
+    removeActive(PatrocinadorT3);
+    removeActive(PatrocinadorD3);
+}
+
+function showRyndack(){
+    addActive(RyndackLogo);
+    addActive(PatrocinadorT3);
+    addActive(PatrocinadorD3);
+
+    removeActive(CreativityLogo);
+    removeActive(PatrocinadorT1);
+    removeActive(PatrocinadorD1);
+    removeActive(DumontLogo);
+    removeActive(PatrocinadorT2);
+    removeActive(PatrocinadorD2);
+}
+
+function addActive(element) {
+    if (element) {
+        element.classList.add("active");
+    }
+}
+
+function removeActive(element) {
+    if (element) {
+        element.classList.remove("active");
+    }
+}
+
+if (OptionElements && OptionElements.length > 0) {
+    OptionElements.forEach(function (element) {
+        element.addEventListener("click", function () {
+            const selectedValue = parseInt(this.getAttribute("value"));
+
+            removeActive(CreativityLogo);
+            removeActive(PatrocinadorT1);
+            removeActive(PatrocinadorD1);
+            removeActive(DumontLogo);
+            removeActive(PatrocinadorT2);
+            removeActive(PatrocinadorD2);
+            removeActive(RyndackLogo);
+            removeActive(PatrocinadorT3);
+            removeActive(PatrocinadorD3);
+
+            switch (selectedValue) {
+                case 1:
+                    showCreativity();
+                    break;
+                case 2:
+                    showDumont();
+                    break;
+                case 3:
+                    showRyndack();
+                    break;
+                default:
+                    break;
+            }
+        });
+    });
+}
+
+showCreativity();
+
+// #endregion
+
 // #region Carroseis
 /*function carrosseis() {
     $(document).ready(function () {
