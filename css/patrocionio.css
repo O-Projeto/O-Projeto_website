@@ -126,6 +126,7 @@
     opacity: 1;
     visibility: visible;
     position: absolute;
+    transition: 0.5s;
 }
 
 .creativity_logo, .dumont_logo, .ryndack_logo {
@@ -143,6 +144,7 @@
     opacity: 1;
     visibility: visible;
     position: absolute;
+    transition: 0.5s;
 }
 
 
