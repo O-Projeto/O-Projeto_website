@@ -152,50 +152,50 @@ const OptionElements = document.querySelectorAll(".option");
 const CreativityLogo = document.querySelector(".creativity_logo");
 const DumontLogo = document.querySelector(".dumont_logo");
 const RyndackLogo = document.querySelector(".ryndack_logo");
-const PatrocinadorT1 = document.querySelector(".patrocinador_titulo_1");
-const PatrocinadorT2 = document.querySelector(".patrocinador_titulo_2");
-const PatrocinadorT3 = document.querySelector(".patrocinador_titulo_3");
-const PatrocinadorD1 = document.querySelector(".patrocinador_descricao_1");
-const PatrocinadorD2 = document.querySelector(".patrocinador_descricao_2");
-const PatrocinadorD3 = document.querySelector(".patrocinador_descricao_3");
+const parceiroT1 = document.querySelector(".parceiro_titulo_1");
+const parceiroT2 = document.querySelector(".parceiro_titulo_2");
+const parceiroT3 = document.querySelector(".parceiro_titulo_3");
+const parceiroD1 = document.querySelector(".parceiro_descricao_1");
+const parceiroD2 = document.querySelector(".parceiro_descricao_2");
+const parceiroD3 = document.querySelector(".parceiro_descricao_3");
 
 function showCreativity(){
     addActive(CreativityLogo);
-    addActive(PatrocinadorT1);
-    addActive(PatrocinadorD1);
+    addActive(parceiroT1);
+    addActive(parceiroD1);
 
     removeActive(DumontLogo);
-    removeActive(PatrocinadorT2);
-    removeActive(PatrocinadorD2);
+    removeActive(parceiroT2);
+    removeActive(parceiroD2);
     removeActive(RyndackLogo);
-    removeActive(PatrocinadorT3);
-    removeActive(PatrocinadorD3);
+    removeActive(parceiroT3);
+    removeActive(parceiroD3);
 }
 
 function showDumont(){
     addActive(DumontLogo);
-    addActive(PatrocinadorT2);
-    addActive(PatrocinadorD2);
+    addActive(parceiroT2);
+    addActive(parceiroD2);
 
     removeActive(CreativityLogo);
-    removeActive(PatrocinadorT1);
-    removeActive(PatrocinadorD1);
+    removeActive(parceiroT1);
+    removeActive(parceiroD1);
     removeActive(RyndackLogo);
-    removeActive(PatrocinadorT3);
-    removeActive(PatrocinadorD3);
+    removeActive(parceiroT3);
+    removeActive(parceiroD3);
 }
 
 function showRyndack(){
     addActive(RyndackLogo);
-    addActive(PatrocinadorT3);
-    addActive(PatrocinadorD3);
+    addActive(parceiroT3);
+    addActive(parceiroD3);
 
     removeActive(CreativityLogo);
-    removeActive(PatrocinadorT1);
-    removeActive(PatrocinadorD1);
+    removeActive(parceiroT1);
+    removeActive(parceiroD1);
     removeActive(DumontLogo);
-    removeActive(PatrocinadorT2);
-    removeActive(PatrocinadorD2);
+    removeActive(parceiroT2);
+    removeActive(parceiroD2);
 }
 
 function addActive(element) {
@@ -216,14 +216,14 @@ if (OptionElements && OptionElements.length > 0) {
             const selectedValue = parseInt(this.getAttribute("value"));
 
             removeActive(CreativityLogo);
-            removeActive(PatrocinadorT1);
-            removeActive(PatrocinadorD1);
+            removeActive(parceiroT1);
+            removeActive(parceiroD1);
             removeActive(DumontLogo);
-            removeActive(PatrocinadorT2);
-            removeActive(PatrocinadorD2);
+            removeActive(parceiroT2);
+            removeActive(parceiroD2);
             removeActive(RyndackLogo);
-            removeActive(PatrocinadorT3);
-            removeActive(PatrocinadorD3);
+            removeActive(parceiroT3);
+            removeActive(parceiroD3);
 
             switch (selectedValue) {
                 case 1:

@@ -1,4 +1,4 @@
-.patrocinio {
+.parceiro {
     position: relative;
     text-align: center;
     margin-top: 3rem;
@@ -15,7 +15,7 @@
     overflow: hidden;
     z-index: 1;
 }
-.patrocinio::before {
+.parceiro::before {
     content: '';
     position: absolute;
     top: -10%;
@@ -28,7 +28,7 @@
     filter: blur(10px);
     z-index: -1;
 }
-.patrocinio_titulo{
+.parceiro_titulo{
     font-size: 1.5rem;
     color: black;
     background-color: #ffb908e1;
@@ -37,14 +37,14 @@
     font-family: 'social-gothic';
     width: 90%;
 }
-.menu_patrocinios ul {
+.menu_parceiros ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     margin-top: 1em;
     margin-bottom: 1em;
 }
-.menu_patrocinios ul li {
+.menu_parceiros ul li {
     background: var(--white);
     padding: 0.5em;
     margin: 0 1em 0 1em;
@@ -52,7 +52,7 @@
     transition: 0.5s;
     cursor: pointer;
 }
-.menu_patrocinios ul li:hover {
+.menu_parceiros ul li:hover {
     background: var(--yellow);
     padding: 0.5em;
     margin: 0 1em 0 1em;
@@ -61,7 +61,7 @@
     cursor: pointer;
 }
 
-.patrocinio_box {
+.parceiro_box {
     width: 80vw; 
     height: 90vh;
     background: white;
@@ -75,7 +75,7 @@
     flex-direction: column;
 }
 
-.patrocinio_box_img {
+.parceiro_box_img {
     width: 100%;
     height: 50%;
     display: flex;  
@@ -83,14 +83,14 @@
     justify-content: center;  
 }
 
-.patrocinio_box_img img {
+.parceiro_box_img img {
     width: auto;  
     height: 100%;  
     max-width: 100%;  
     object-fit: contain;  
 }
 
-.patrocinio_box_info {
+.parceiro_box_info {
     width: 100%;
     height: 50%;
     display: flex;  
@@ -100,20 +100,20 @@
     text-align: center;  
 }
 
-.patrocinador_titulo_1, .patrocinador_titulo_2, .patrocinador_titulo_3, 
-.patrocinador_titulo_1.active, .patrocinador_titulo_2.active, .patrocinador_titulo_3.active {
+.parceiro_titulo_1, .parceiro_titulo_2, .parceiro_titulo_3, 
+.parceiro_titulo_1.active, .parceiro_titulo_2.active, .parceiro_titulo_3.active {
     top: 50%;
     font-size: 2rem;
 }
 
-.patrocinador_descricao_1, .patrocinador_descricao_2, .patrocinador_descricao_3,
-.patrocinador_descricao_1.active, .patrocinador_descricao_2.active, .patrocinador_descricao_3.active {
+.parceiro_descricao_1, .parceiro_descricao_2, .parceiro_descricao_3,
+.parceiro_descricao_1.active, .parceiro_descricao_2.active, .parceiro_descricao_3.active {
     top: 65%;
     width: 80%;
 }
 
-.patrocinador_titulo_1, .patrocinador_titulo_2, .patrocinador_titulo_3,
-.patrocinador_descricao_1, .patrocinador_descricao_2, .patrocinador_descricao_3 {
+.parceiro_titulo_1, .parceiro_titulo_2, .parceiro_titulo_3,
+.parceiro_descricao_1, .parceiro_descricao_2, .parceiro_descricao_3 {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s, visibility 0.5s;
@@ -121,8 +121,8 @@
     position: absolute;
 }
 
-.patrocinador_titulo_1.active, .patrocinador_titulo_2.active, .patrocinador_titulo_3.active,
-.patrocinador_descricao_1.active, .patrocinador_descricao_2.active, .patrocinador_descricao_3.active {
+.parceiro_titulo_1.active, .parceiro_titulo_2.active, .parceiro_titulo_3.active,
+.parceiro_descricao_1.active, .parceiro_descricao_2.active, .parceiro_descricao_3.active {
     opacity: 1;
     visibility: visible;
     position: absolute;
@@ -153,14 +153,14 @@
     .patrocionio{
         width: 100%; 
     }
-    .patrocinio h2{
+    .parceiro h2{
         font-size: 2rem;
         font-family: 'social-gothic';
     }
-    .patrocinio p{
+    .parceiro p{
         font-size: 1.5rem;
     }
-    .patrocinio button{
+    .parceiro button{
         border: none;
         background-color: var(--yellow);
         border-radius: 1rem;
@@ -175,17 +175,17 @@
     .patrocionio{
         width:100%;
     }
-    .patrocinio h2{
+    .parceiro h2{
         font-size: 2rem;
         text-align: center;
         color: var(--white);
         font-family: 'social-gothic';
 
     }
-    .patrocinio p{
+    .parceiro p{
         font-family: 'roboto';
     }
-    .patrocinio button{
+    .parceiro button{
         border: none;
         background-color: var(--yellow);
         border-radius: 1rem;
@@ -195,7 +195,7 @@
         /* topo | direita | inferior | esquerda */
         font-size: 1.5rem;
     }
-    .patrocinio button:hover{
+    .parceiro button:hover{
         cursor: pointer;
         background-color: var(--light_blue);
         color: var(--white);
