@@ -32,11 +32,9 @@ swiper-slide{
 .person img{
     width: 4.5rem;
     border-radius: 5rem;
-}
-
-.person img {
     width: 50%;
 }
+
 .person p {
     font-size: 14px;
     color: var(--yellow);
