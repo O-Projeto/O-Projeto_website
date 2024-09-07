@@ -56,9 +56,6 @@ iframe{
     margin-top: 1rem
 }
 
-
-
-
 /*TABLET*/
 @media screen and (min-width:768px) {
     .localizacao{
@@ -94,8 +91,6 @@ iframe{
         font-family: 'Social-gothic';
         margin: 2rem 1rem 10rem 0;
         font-size: 1.5rem;
-        
-        
     }
     iframe{
         width: 90%;
@@ -109,7 +104,6 @@ iframe{
         margin-top: 1rem;
     }
 }
-
 
 /*NOTEBOOK*/
 @media screen and (min-width:1024px) {
@@ -128,22 +122,28 @@ iframe{
         font-family: 'Social-gothic';
         color: var(--yellow);
     }
-    .localizacao img{
+    .conteiner_img{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 2rem; 
+        margin-top: 2rem; 
+        max-width: 100%;
+    }
+    .conteiner_img img{
         width: 25rem;
         border: 6px solid white;
         border-radius: 1rem;
-        margin-right: 30rem;
-       
+        margin: 0;
     }
     .infos{
         font-family: 'Social-gothic';
-        margin: -15rem 0 0 25rem;
+        margin: 0;
         font-size: 1.5rem;
-        
-        
+        justify-content: center;
     }
     .infos h3{
-        margin-left: 5rem;
+        margin: auto;
     }
     iframe{
         width: 90%;
@@ -153,8 +153,6 @@ iframe{
     }
     .infos p{
         font-family: 'Roboto';
-        margin-left: 25rem;
-        margin-top: 1rem
-        
+        margin: 2rem auto;
     }
 }
