@@ -1,6 +1,7 @@
 
 .container{
     text-align: center;
+
 }
 .container h2{
     background-color: var(--dark_blue);
@@ -95,6 +96,7 @@
     .container{
         text-align: center;
         width: 100%;
+        overflow: hidden;
     }
     .container h2{
 
