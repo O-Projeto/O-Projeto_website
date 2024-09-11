@@ -6,8 +6,8 @@
     background-image: url('../img/banner.png');
     background-size: cover;
     background-position: center;
-    border-top: 0.4rem solid var(--yellow);
-    border-bottom: 0.4rem solid var(--yellow);
+    border-top: 0.25rem solid var(--dark_blue);
+    border-bottom: 0.25rem solid var(--dark_blue);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,8 +30,8 @@
 }
 .parceiro_titulo{
     font-size: 1.5rem;
-    color: black;
-    background-color: #ffb908e1;
+    background-color: var(--dark_blue);
+    color: var(--white);
     opacity: 1;
     border-radius: 0.5rem;
     font-family: 'social-gothic';
