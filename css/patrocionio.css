@@ -28,8 +28,8 @@
     filter: blur(10px);
     z-index: -1;
 }
-.parceiro_titulo{
-    font-size: 1.5rem;
+.parceiro_titulo {
+    font-size: 1.2rem;
     background-color: var(--dark_blue);
     color: var(--white);
     opacity: 1;
@@ -37,6 +37,7 @@
     font-family: 'social-gothic';
     width: 90%;
 }
+
 .menu_parceiros ul {
     list-style: none;
     display: flex;
@@ -45,20 +46,19 @@
     margin-bottom: 1em;
 }
 .menu_parceiros ul li {
-    background: var(--white);
+    background: #dbdbdb;
     padding: 0.5em;
     margin: 0 1em 0 1em;
     border-radius: 0.5rem;
-    transition: 0.5s;
+    transition: 0.2s;
     cursor: pointer;
+    transition: 0.5s;
 }
 .menu_parceiros ul li:hover {
-    background: var(--yellow);
-    padding: 0.5em;
-    margin: 0 1em 0 1em;
-    border-radius: 0.5rem;
+    padding: 0.6rem;
     transition: 0.5s;
     cursor: pointer;
+
 }
 
 .parceiro_box {
@@ -98,12 +98,20 @@
     align-items: center;  
     justify-content: center;  
     text-align: center;  
+    background-color: #dbdbdb;
+    transition: 0.5s;
+}
+
+.theme-dark .parceiro_box_info, .theme-dark .menu_parceiros ul li {
+    background-color: var(--dark_blue);
+    transition: 0.5s;
 }
 
 .parceiro_titulo_1, .parceiro_titulo_2, .parceiro_titulo_3, 
 .parceiro_titulo_1.active, .parceiro_titulo_2.active, .parceiro_titulo_3.active {
-    top: 50%;
-    font-size: 2rem;
+    top: 55%;
+    font-size: 1.4rem;
+    text-decoration: none;
 }
 
 .parceiro_descricao_1, .parceiro_descricao_2, .parceiro_descricao_3,
@@ -161,13 +169,15 @@
         font-size: 1.5rem;
     }
     .parceiro button{
-        border: none;
-        background-color: var(--yellow);
+        border: 0.2rem solid var(--black);
+        background-color: var(#dbdbdb);
         border-radius: 1rem;
         width: 12rem;
         height: 2rem;
         font-family: 'Social-Gothic';
         font-size: 1rem;
+        margin-top: 1rem;
+        transition: 0.5s;
     }
 }
 /*NOTEBOOK*/
@@ -186,19 +196,51 @@
         font-family: 'roboto';
     }
     .parceiro button{
-        border: none;
-        background-color: var(--yellow);
+        display: none;
+        border: 0.1rem solid var(--black);
+        background-color: var(#dbdbdb);
         border-radius: 1rem;
         width: 15rem;
         height: 3rem;
         font-family: 'Social-Gothic';
         /* topo | direita | inferior | esquerda */
         font-size: 1.5rem;
-    }
-    .parceiro button:hover{
-        cursor: pointer;
-        background-color: var(--light_blue);
-        color: var(--white);
         transition: 0.5s;
+        position: relative;
+        margin-top: 1.5rem;
+        top: 30%;
+    }
+    .parceiro button.active{
+        display: block;
+        border: 0.1rem solid var(--black);
+        background-color: var(#dbdbdb);
+        border-radius: 1rem;
+        width: 15rem;
+        height: 3rem;
+        font-family: 'Social-Gothic';
+        /* topo | direita | inferior | esquerda */
+        font-size: 1.5rem;
+        transition: 0.5s;
+        position: relative;
+        margin-top: 1.5rem;
+        top: 30%;
+    }
+
+    .theme-dark .parceiro button{
+        text-decoration: none;
+        transition: 0.5s;
+        color: var(--dark_blue);
+    } 
+    .theme-light .parceiro button{
+        text-decoration: none;
+        transition: 0.5s;
+        color: var(--black);
+    }
+    .theme-dark .parceiro button:hover,
+    .theme-light .parceiro button:hover{
+        cursor: pointer;
+        color: var(--green);
+        transition: 0.5s;
+        text-decoration: none;
     }
 }

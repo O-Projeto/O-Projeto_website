@@ -31,8 +31,8 @@
 
 .preloader::after {
     content: "";
-    width: 7em;
-    height: 7em;
+    width: 5.5em;
+    height: 5.5em;
     border: 15px solid #dbdbdb;
     border-top-color: var(--green);
     border-radius: 50%;

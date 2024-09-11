@@ -158,44 +158,56 @@ const parceiroT3 = document.querySelector(".parceiro_titulo_3");
 const parceiroD1 = document.querySelector(".parceiro_descricao_1");
 const parceiroD2 = document.querySelector(".parceiro_descricao_2");
 const parceiroD3 = document.querySelector(".parceiro_descricao_3");
+const btnCreativity = document.querySelector(".btn_creativity");
+const btnDumont = document.querySelector(".btn_dumont");
+const btnRyndack = document.querySelector(".btn_ryndack");
 
 function showCreativity(){
     addActive(CreativityLogo);
     addActive(parceiroT1);
     addActive(parceiroD1);
+    addActive(btnCreativity)
 
     removeActive(DumontLogo);
     removeActive(parceiroT2);
     removeActive(parceiroD2);
+    removeActive(btnDumont);
     removeActive(RyndackLogo);
     removeActive(parceiroT3);
     removeActive(parceiroD3);
+    removeActive(btnRyndack);
 }
 
 function showDumont(){
     addActive(DumontLogo);
     addActive(parceiroT2);
     addActive(parceiroD2);
+    addActive(btnDumont)
 
     removeActive(CreativityLogo);
     removeActive(parceiroT1);
     removeActive(parceiroD1);
+    removeActive(btnCreativity)
     removeActive(RyndackLogo);
     removeActive(parceiroT3);
     removeActive(parceiroD3);
+    removeActive(btnRyndack);
 }
 
 function showRyndack(){
     addActive(RyndackLogo);
     addActive(parceiroT3);
     addActive(parceiroD3);
+    addActive(btnRyndack)
 
     removeActive(CreativityLogo);
     removeActive(parceiroT1);
     removeActive(parceiroD1);
+    removeActive(btnCreativity)
     removeActive(DumontLogo);
     removeActive(parceiroT2);
     removeActive(parceiroD2);
+    removeActive(btnDumont)
 }
 
 function addActive(element) {
@@ -218,12 +230,15 @@ if (OptionElements && OptionElements.length > 0) {
             removeActive(CreativityLogo);
             removeActive(parceiroT1);
             removeActive(parceiroD1);
+            removeActive(btnCreativity);
             removeActive(DumontLogo);
             removeActive(parceiroT2);
             removeActive(parceiroD2);
+            removeActive(btnDumont);
             removeActive(RyndackLogo);
             removeActive(parceiroT3);
             removeActive(parceiroD3);
+            removeActive(btnRyndack);
 
             switch (selectedValue) {
                 case 1:
