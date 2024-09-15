@@ -261,6 +261,39 @@ showCreativity();
 
 // #endregion
 
+//#region Notícias
+
+let currentSlide = 1;
+const totalSlides = document.querySelectorAll('.noticias_box_esquerda .noticia').length;
+
+function showSlide(slideNumber) {
+    document.querySelectorAll('.noticias_box_direita .noticia').forEach(slide => {
+        slide.classList.remove('active');
+    });
+    const activeTextSlide = document.querySelector(`.noticias_box_direita .noticia_${slideNumber}`);
+    if (activeTextSlide) {
+        activeTextSlide.classList.add('active');
+    }
+
+    document.querySelectorAll('.noticias_box_esquerda .noticia').forEach(slide => {
+        slide.classList.remove('active');
+    });
+    const activeImageSlide = document.querySelector(`.noticias_box_esquerda .noticia_${slideNumber}`);
+    if (activeImageSlide) {
+        activeImageSlide.classList.add('active');
+    }
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide % totalSlides) + 1;
+    showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+setInterval(nextSlide, 7000);
+
+// #endregion
+
 // #region Carroseis
 /*function carrosseis() {
     $(document).ready(function () {
