@@ -1,14 +1,16 @@
-.objetivos{
+.objetivos {
     text-align: center;
     width: 100%;
 }
-.text_objetivos{
+
+.text_objetivos {
     font-family: "Roboto";
     text-align: center;
     padding: 1rem;
     margin: 1rem;
 }
-.text_objetivos h2{
+
+.text_objetivos h2 {
     font-family: "Social-Gothic";
     border: none;
     background-color: var(--yellow);
@@ -18,11 +20,13 @@
     margin-bottom: 1rem;
     padding: 0.2rem;
 }
-.text_objetivos p{
+
+.text_objetivos p {
     font-size: 1.2rem;
     width: 100%;
 }
-.text_objetivos h3{
+
+.text_objetivos h3 {
     font-family: "Social-Gothic";
     font-size: 1.3rem;
     width: 100%;
@@ -31,17 +35,30 @@
     border-radius: 0.5rem;
     padding: 0.5rem;
 }
-swiper-container{
+
+.centered-horizontal {
+    width: 80%;
+    font-family: "Roboto";
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+swiper-container {
     --swiper-pagination-color: var(--red);
     --swiper-pagination-size: 2rem;
     --swiper-pagination-top: auto;
 }
-swiper-slide{
+
+swiper-slide {
     margin-left: 5rem;
     margin-bottom: 2rem;
-    
+
 }
-.comunidade{
+
+.comunidade {
     text-align: center;
     padding: 2rem;
     border-radius: 1rem;
@@ -51,15 +68,18 @@ swiper-slide{
     width: 11.5rem;
     height: 22em;
 }
-.comunidade img{
+
+.comunidade img {
     width: 3rem;
     align-items: center;
 }
-.comunidade p{
+
+.comunidade p {
     justify-content: center;
-    padding:1rem;
+    padding: 1rem;
 }
-#gothic{
+
+#gothic {
     font-family: 'Social-Gothic';
     color: var(--black);
 }
@@ -67,70 +87,80 @@ swiper-slide{
 
 /*TABLET*/
 @media screen and (min-width:768px) {
-    .text_objetivos{
+    .text_objetivos {
         font-family: "Roboto";
         text-align: center;
         margin: 1rem;
     }
-    
-    .comunidade{
+
+    .comunidade {
         text-align: center;
         width: 15rem;
         height: 17rem;
         border-radius: 1rem;
     }
-    .comunidade img{
+
+    .comunidade img {
         width: 3.5rem;
         align-items: center;
     }
-    .comunida p{
+
+    .comunida p {
         width: 10rem;
         margin: auto;
         font-family: 'Roboto';
     }
-   
-    
+
+
 }
 
 /*NOTEBOOK*/
 @media screen and (min-width:1024px) {
-    .objetivos{
+    .objetivos {
         text-align: center;
 
     }
-    .text_objetivos{
+
+    .text_objetivos {
         font-family: "Roboto";
         text-align: center;
         padding: 1rem;
         margin: 2rem;
     }
-    .text_objetivos h2{
+
+    .text_objetivos h2 {
         font-size: 2rem;
     }
-    .text_objetivos h3{
+
+    .text_objetivos h3 {
         font-size: 1.7rem;
     }
-    .text_objetivos p{
+
+    .text_objetivos p {
         margin-left: 10rem;
         width: 70%;
         font-size: 1.2rem;
     }
-    swiper-container{
+
+    swiper-container {
         --swiper-pagination-color: var(--red);
         --swiper-pagination-size: 8rem;
         --swiper-pagination-top: auto;
     }
-    .comunidade{
+
+    .comunidade {
         width: 18rem;
         height: 17rem;
     }
-    .comunidade img{
+
+    .comunidade img {
 
         width: 5.9rem;
 
     }
-    .comunidade p{
+
+    .comunidade p {
         margin: auto;
     }
-    
+
 }
