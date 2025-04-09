@@ -17,7 +17,7 @@
     --color-secondary: var(--light_grey);
     --color-accent: var(--green);
     --font-color: var(--black);
-    
+
 }
 
 .theme-dark {
@@ -84,4 +84,16 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5rem;
     border: none;
     width: 0.2px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* Espaçamento entre as imagens */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
 }
